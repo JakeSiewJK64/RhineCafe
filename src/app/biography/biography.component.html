@@ -1,0 +1,84 @@
+<div fxLayout="column" class="w-100">
+  <div fxLayout="column" class="m-4">
+    <div class="w-100 ms-auto me-auto" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="5px">
+      <img class="container-1-anim" src="https://avatars.githubusercontent.com/u/47139291?v=4" alt="avatar">
+      <h3 class="name-container-anim">Jake Siew Joe Kane</h3>
+      <span class="text-center w-50 subtitle-container-anim">{{ description }}</span>
+      <div class="wrapper">
+        <div class="typing-demo">
+          <span class="typewriter">💪 Berkhidmat Untuk Negara 💪</span>
+        </div>
+      </div>
+    </div>
+    <div fxLayoutAlign="center center">
+      <div *ngFor="let item of social_buttons" class="social-tab social-container-anim">
+        <a [href]="item.link">
+          <img [src]="item.imgUrl" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="5px" class="m-4">
+    <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center">
+      <mat-card class="mat-elevation-z5">
+        <mat-card-title>Frameworks</mat-card-title>
+        <mat-card-content>
+          <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
+            <div *ngFor="let framework of frameworks" class="social-tab">
+              <img [src]="framework.imgUrl" alt="">
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="mat-elevation-z5">
+        <mat-card-title>Tools</mat-card-title>
+        <mat-card-content>
+          <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
+            <div *ngFor="let tool of tools" class="social-tab">
+              <img [src]="tool.imgUrl" alt="">
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="5px" class="m-4">
+    <h3>Education</h3>
+    <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="center center">
+      <mat-card class="mat-elevation-z5" *ngFor="let education of educations">
+        <mat-card-content>
+          <div fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="center center">
+            <img [src]="education.imgUrl" alt="INTI" width="50px">
+            <h4>{{ education.name }}</h4>
+            <span>{{ education.programme }}</span>
+            <span>Duration: {{ education.duration }} Years</span>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="20px" class="m-4 experience-division">
+    <h3>Experience</h3>
+    <mat-card *ngFor="let experience of work_experience" class="w-75 mat-elevation-z5" fxLayout="column">
+      <mat-card-content fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
+        <img class="mt-auto mb-auto" [src]="experience.imgUrl">
+        <div fxLayout="column">
+          <div fxLayout="row">
+            <mat-icon>business</mat-icon>
+            <span>{{ experience.company }}</span>
+          </div>
+          <div fxLayout="row">
+            <mat-icon>event</mat-icon>
+            <span>Duration: {{ experience.duration }}</span>
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-actions fxLayoutAlign="end end">
+        <button mat-flat-button (click)="showDialog()">Learn More</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,127 @@
+mat-card img {
+    width: 20rem;
+    height: auto;
+}
+
+mat-card {
+    width: 400px;
+    height: 200px;
+    transition: transform 0.2s;
+}
+
+mat-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.experience-division img {
+    width: 14rem;
+    height: auto;
+}
+
+.experience-division mat-card {
+    width: 300px;
+    transition: none;
+    transform: none;
+}
+
+.experience-division mat-card-content {
+    min-height: 7rem;
+    max-height: 7rem;
+}
+
+.social-tab img {
+    width: 40px;
+    margin: 5px;
+    height: 40px;
+}
+
+.container-1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+    display: table;
+}
+
+.container-1-anim {
+    position: relative;
+    animation: bottom-to-top 1s;
+    transition: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.name-container-anim {
+    position: relative;
+    animation: bottom-to-top 3s;
+    transition: 5s;
+    animation-delay: 2s;
+    flex: 1;
+    text-align: center;
+    animation-fill-mode: both;
+}
+
+.subtitle-container-anim {
+    position: relative;
+    animation: bottom-to-top 5s;
+    transition: 5s;
+    animation-delay: 3s;
+    flex: 1;
+    text-align: center;
+    animation-fill-mode: both;
+}
+
+.social-container-anim {
+    position: relative;
+    animation: bottom-to-top 5s;
+    transition: 7s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-demo {
+    width: 31ch;
+    animation: typing 2s steps(22), blink-caret 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1em;
+}
+
+@keyframes bottom-to-top {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}

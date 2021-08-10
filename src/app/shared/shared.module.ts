@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from './material.module';
 import { CovalentModule } from './covalent.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
     declarations: [
@@ -9,10 +10,12 @@ import { CovalentModule } from './covalent.module';
     imports: [
         CommonModule,
         MaterialModule,
-        CovalentModule
+        CovalentModule,
+        FlexLayoutModule
     ],
     exports: [
         MaterialModule,
+        FlexLayoutModule,
         CovalentModule,
     ]
 })
