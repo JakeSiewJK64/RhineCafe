@@ -44,8 +44,8 @@ export class BiographyComponent implements OnInit {
   ]
 
   work_experience = [
-    { company: "Aibutler Sdn. Bhd.", duration: "January, 2021 - April, 2021", imgUrl: "https://lh3.googleusercontent.com/proxy/XVt-NaTvUOOXWqW7XbSQQcYoz-akE2XAVHZGxwAZ6myBpZ3GkeC5JaqfG62SZkar5h0aBtTndf6HzXeX-5CmpOzOQxJuhC03VHYU6JuAduE10wWD9j62Dp3gs9A8HR0Dyyl2sh4m7BIQ0MifRQNQqYSXdA" },
-    { company: "Doctor2U", duration: "April, 2021 - July, 2021", imgUrl: "https://shop.doctor2u.my/assets/image/Doctor2U.png" },
+    { company: "Aibutler Sdn. Bhd.", duration: "January, 2021 - April, 2021", imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/CompanyLogo/aibutler.png?token=ALHUTWYBSNIW7EEUPDC5O73BCJ2TI" },
+    { company: "Doctor2U", duration: "April, 2021 - July, 2021", imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/CompanyLogo/Doctor2U.png?token=ALHUTW7TYNN62YLQ3KCJHL3BCJ2WY" },
   ]
 
   ngOnInit(): void {

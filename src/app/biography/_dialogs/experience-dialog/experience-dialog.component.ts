@@ -20,10 +20,7 @@ export class ExperienceDialogComponent implements OnInit {
   }
 
   load() {
-    this.dataSource = experiences.filter(x => x.name == this.data.company);
-    this.name = this.dataSource[0].name;
-    this.duration = this.dataSource[0].duration;
-    this.version_control = this.dataSource[0].version_control;
+    this.dataSource = experiences.filter(x => x.name == this.data.company)[0];
   }
 
   close() {
