@@ -12,7 +12,7 @@ export class BiographyComponent implements OnInit {
   constructor(private dialogService: TdDialogService) { }
 
   description: string = `
-  Hi! My name is Jake Siew Joe Kane. , an avid full stack web developer. I also have an interest in Machine Learning and AI related fields and plan on building my own virtual assistant one day like JARVIS. I hope to journey into this endeavor with you.
+  Hi! My name is Jake Siew Joe Kane, an avid full stack web developer. I also have an interest in Machine Learning and AI related fields and plan on building my own virtual assistant one day like JARVIS. I hope to journey into this endeavor with you.
   `
 
   educations: any = [

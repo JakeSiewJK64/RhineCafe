@@ -10,11 +10,21 @@
         </div>
       </div>
     </div>
-    <div fxLayoutAlign="center center">
-      <div *ngFor="let item of social_buttons" class="social-tab social-container-anim">
-        <a [href]="item.link">
-          <img [src]="item.imgUrl" alt="">
-        </a>
+    <div fxLayoutAlign="center center" fxLayout="column">
+      <div fxLayout="row">
+        <div *ngFor="let item of social_buttons" class="social-tab social-container-anim">
+          <a [href]="item.link">
+            <img [src]="item.imgUrl" alt="">
+          </a>
+        </div>
+      </div>
+      <div>
+        <div fxLayout='row'>
+          <mat-icon>send</mat-icon>
+          <a href="mailto:joekanesiew@outlook.com">
+            <span>joekanesiew@outlook.com</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
