@@ -1,1 +1,28 @@
-<p>experience-dialog works!</p>
+<mat-card>
+    <mat-card-title>{{ name }}</mat-card-title>
+    <mat-card-content fxLayout="column">
+        <div fxLayout="column wrap" fxLayoutGap="20px">
+            <h3>Tools Used</h3>
+            <div *ngFor="let item of dataSource">
+                <mat-chip-list class="example-chip" cdkDropList cdkDropListOrientation="horizontal">
+                    <mat-chip class="example-box" cdkDrag *ngFor="let tool of item.tools">
+                        {{ tool }}
+                    </mat-chip>
+                </mat-chip-list>
+            </div>
+            <h3>Langauges</h3>
+            <div *ngFor="let item of dataSource">
+                <mat-chip-list class="example-chip" cdkDropList cdkDropListOrientation="horizontal">
+                    <mat-chip class="example-box" cdkDrag *ngFor="let language of item.languages">
+                        {{ language }}
+                    </mat-chip>
+                </mat-chip-list>
+            </div>
+            <h3>Version Control Software: {{ version_control }}</h3>
+            <h3>Duration: {{ duration }}</h3>
+        </div>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="end end">
+        <button mat-flat-button class="okButton" (click)="close()">OK!</button>
+    </mat-card-actions>
+</mat-card>

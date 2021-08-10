@@ -44,16 +44,19 @@ export class BiographyComponent implements OnInit {
   ]
 
   work_experience = [
-    { company: "Aibutler Sdn. Bhd.", duration: "January, 2021 - April, 2021", imgUrl: "../../assets/img/aibutler.png" },
-    { company: "Doctor2u", duration: "April, 2021 - July, 2021", imgUrl: "../../assets/img/Doctor2U.png" },
+    { company: "Aibutler Sdn. Bhd.", duration: "January, 2021 - April, 2021", imgUrl: "https://lh3.googleusercontent.com/proxy/XVt-NaTvUOOXWqW7XbSQQcYoz-akE2XAVHZGxwAZ6myBpZ3GkeC5JaqfG62SZkar5h0aBtTndf6HzXeX-5CmpOzOQxJuhC03VHYU6JuAduE10wWD9j62Dp3gs9A8HR0Dyyl2sh4m7BIQ0MifRQNQqYSXdA" },
+    { company: "Doctor2U", duration: "April, 2021 - July, 2021", imgUrl: "https://shop.doctor2u.my/assets/image/Doctor2U.png" },
   ]
 
   ngOnInit(): void {
   }
 
-  showDialog() {
+  showDialog(company: string) {
     this.dialogService.open(ExperienceDialogComponent, {
-      width: "80vw"
+      width: "80vw",
+      data: {
+        company: company
+      }
     })
   }
 }

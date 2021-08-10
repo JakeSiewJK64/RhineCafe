@@ -4,7 +4,7 @@ import { BiographyComponent } from './biography/biography.component';
 
 const routes: Routes = [
   {
-    path: "bio",
+    path: "",
     component: BiographyComponent,
     pathMatch: 'full'
   }
