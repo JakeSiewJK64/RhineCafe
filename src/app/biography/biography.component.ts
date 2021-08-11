@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TdDialogService } from '@covalent/core/dialogs';
-import { experiences, ProgrammingKnowledge, ProgrammingLanguage } from './_dialogs/experience-dialog/experience-contants';
+import { experiences, ProgrammingKnowledge, ProgrammingLanguage, SpokenLanguage, SpokenLanguages } from './_dialogs/experience-dialog/experience-contants';
 import { ExperienceDialogComponent } from './_dialogs/experience-dialog/experience-dialog.component';
 
 @Component({
@@ -45,7 +45,8 @@ export class BiographyComponent implements OnInit {
   ]
 
   work_experience = experiences;
-  programming_knowledge: ProgrammingLanguage[] = ProgrammingKnowledge.sort((x, y) => x.level - y.level);
+  programming_knowledge: ProgrammingLanguage[] = ProgrammingKnowledge.sort((x, y) => y.level - x.level);
+  spoken_languages: SpokenLanguage[] = SpokenLanguages.sort((x, y) => y.level - x.level);
 
   ngOnInit(): void {
   }

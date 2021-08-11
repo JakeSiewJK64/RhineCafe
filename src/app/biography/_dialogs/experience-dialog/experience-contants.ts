@@ -9,11 +9,39 @@ export interface Experience {
     duties: string[]
 }
 
+export interface SpokenLanguage {
+    name: string,
+    level: number,
+    imgUrl: string
+}
 export interface ProgrammingLanguage {
     name: string,
     level: number,
     imgUrl: string
 }
+
+export const SpokenLanguages: SpokenLanguage[] = [
+    {
+        name: "English",
+        level: 95,
+        imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/GB.svg"
+    },
+    {
+        name: "Chinese",
+        level: 80,
+        imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/CN.svg"
+    },
+    {
+        name: "Japanese",
+        level: 60,
+        imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/JP.svg"
+    },
+    {
+        name: "Malay",
+        level: 70,
+        imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/MY.svg"
+    },
+]
 
 export const ProgrammingKnowledge: ProgrammingLanguage[] = [
     {
