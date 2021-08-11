@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TdDialogService } from '@covalent/core/dialogs';
+import { experiences } from './_dialogs/experience-dialog/experience-contants';
 import { ExperienceDialogComponent } from './_dialogs/experience-dialog/experience-dialog.component';
 
 @Component({
@@ -43,10 +44,7 @@ export class BiographyComponent implements OnInit {
     { imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/bootstrap/bootstrap-plain.svg" },
   ]
 
-  work_experience = [
-    { company: "Aibutler Sdn. Bhd.", duration: "January, 2021 - April, 2021", imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/CompanyLogo/aibutler.png?token=ALHUTWYBSNIW7EEUPDC5O73BCJ2TI" },
-    { company: "Doctor2U", duration: "April, 2021 - July, 2021", imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/CompanyLogo/Doctor2U.png?token=ALHUTW7TYNN62YLQ3KCJHL3BCJ2WY" },
-  ]
+  work_experience = experiences;
 
   ngOnInit(): void {
   }

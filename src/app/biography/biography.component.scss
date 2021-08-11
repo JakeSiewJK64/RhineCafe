@@ -3,8 +3,14 @@ mat-card img {
     height: auto;
 }
 
-mat-card {
-    width: 400px;
+.education-section mat-card {
+    width: 26rem;
+    height: 200px;
+    transition: transform 0.2s;
+}
+
+.tools-n-frameworks mat-card {
+    width: 26rem;
     height: 200px;
     transition: transform 0.2s;
 }
@@ -15,7 +21,7 @@ mat-card:hover {
 }
 
 .experience-division img {
-    width: 14rem;
+    width: calc(8rem + 3vw);
     height: auto;
 }
 

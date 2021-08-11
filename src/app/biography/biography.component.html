@@ -29,7 +29,8 @@
     </div>
   </div>
   <mat-divider></mat-divider>
-  <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="5px" class="m-4">
+  <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="5px" class="m-4 tools-n-frameworks" fxHide.sm
+    fxHide.xs>
     <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center">
       <mat-card class="mat-elevation-z5">
         <mat-card-title>Frameworks</mat-card-title>
@@ -53,10 +54,46 @@
       </mat-card>
     </div>
   </div>
+  <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="5px" class="m-4 tools-n-frameworks" fxHide.md
+    fxHide.lg fxHide.xl fxHide.gt-sm>
+    <mat-card class="mat-elevation-z5 mt-3">
+      <mat-card-title>Frameworks</mat-card-title>
+      <mat-card-content>
+        <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
+          <div *ngFor="let framework of frameworks" class="social-tab">
+            <img [src]="framework.imgUrl" alt="">
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="mat-elevation-z5 mt-3">
+      <mat-card-title>Tools</mat-card-title>
+      <mat-card-content>
+        <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
+          <div *ngFor="let tool of tools" class="social-tab">
+            <img [src]="tool.imgUrl" alt="">
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
   <mat-divider></mat-divider>
-  <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="5px" class="m-4">
+  <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="5px" class="m-4 education-section">
     <h3>Education</h3>
-    <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="center center">
+    <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="center center" fxHide.xs fxHide.sm>
+      <mat-card class="mat-elevation-z5" *ngFor="let education of educations">
+        <mat-card-content>
+          <div fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="center center">
+            <img [src]="education.imgUrl" alt="INTI" width="50px">
+            <h4>{{ education.name }}</h4>
+            <span>{{ education.programme }}</span>
+            <span>Duration: {{ education.duration }} Years</span>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div fxLayout="column wrap" fxLayoutGap="20px" fxLayoutAlign="center center" fxHide.md fxHide.lg fxHide.xl
+      fxHide.gt-sm>
       <mat-card class="mat-elevation-z5" *ngFor="let education of educations">
         <mat-card-content>
           <div fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="center center">
@@ -73,12 +110,26 @@
   <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="20px" class="m-4 experience-division">
     <h3>Experience</h3>
     <mat-card *ngFor="let experience of work_experience" class="w-75 mat-elevation-z5" fxLayout="column">
-      <mat-card-content fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
+      <mat-card-content fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center" fxHide.xs fxHide.sm>
         <img class="me-3" [src]="experience.imgUrl">
         <div fxLayout="column">
           <div fxLayout="row">
             <mat-icon>business</mat-icon>
-            <span>{{ experience.company }}</span>
+            <span>{{ experience.name }}</span>
+          </div>
+          <div fxLayout="row">
+            <mat-icon>event</mat-icon>
+            <span>Duration: {{ experience.duration }}</span>
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-content fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="center center" fxHide.md fxHide.lg fxHide.xl
+        fxHide.hide-sm fxHide.gt-sm fxShow.sm>
+        <img class="me-3" [src]="experience.imgUrl">
+        <div fxLayout="column">
+          <div fxLayout="row">
+            <mat-icon>business</mat-icon>
+            <span>{{ experience.name }}</span>
           </div>
           <div fxLayout="row">
             <mat-icon>event</mat-icon>
@@ -87,7 +138,7 @@
         </div>
       </mat-card-content>
       <mat-card-actions fxLayoutAlign="end end">
-        <button mat-flat-button (click)="showDialog(experience.company)">Learn More</button>
+        <button mat-flat-button (click)="showDialog(experience.name)">Learn More</button>
       </mat-card-actions>
     </mat-card>
   </div>

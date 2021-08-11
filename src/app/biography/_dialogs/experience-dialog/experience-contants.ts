@@ -2,6 +2,7 @@ export interface Experience {
     name: string,
     duration: string,
     tools: string[],
+    position: string,
     version_control: string,
     languages: string[],
     imgUrl: string,
@@ -24,9 +25,10 @@ export const experiences: Experience[] = [
             "Azure Data Studio",
             "Swagger openAPI Documentation"
         ],
+        position: "Intern",
         version_control: "Github Desktop",
         languages: ["C#", "Typescript", "SQL", "HTML", "CSS"],
-        imgUrl: "../../../../assets/img/d2u.5CmpOzOQxJuhC03VHYU6JuAduE10wWD9j62Dp3gs9A8HR0Dyyl2sh4m7BIQ0MifRQNQqYSXdA",
+        imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/CompanyLogo/Doctor2U.png?token=ALHUTW7TYNN62YLQ3KCJHL3BCJ2WY",
         duties: ["To help with development of web product both frontend and backend."]
     },
     {
@@ -42,9 +44,10 @@ export const experiences: Experience[] = [
             "PostgreSQL",
             "Bootstrap"
         ],
+        position: "Intern",
         version_control: "Subversion Repository and Tortoise SVN",
         languages: ["Java", "XML", "CSS"],
-        imgUrl: "../../../../assets/img/d2u.5CmpOzOQxJuhC03VHYU6JuAduE10wWD9j62Dp3gs9A8HR0Dyyl2sh4m7BIQ0MifRQNQqYSXdA",
+        imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/CompanyLogo/aibutler.png?token=ALHUTWYBSNIW7EEUPDC5O73BCJ2TI",
         duties: [
             "Created Android Application (APK) to wrap AIB4.0 web application HTML.",
             "Designed Java program for Cartonization process.",
