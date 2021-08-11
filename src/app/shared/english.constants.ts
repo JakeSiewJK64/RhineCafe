@@ -33,7 +33,9 @@ export const EducationEN: string = "Education";
 export const ComputerLanguageEN: string = "Computer Language";
 export const SpokenLanguageEN: string = "Spoken Language";
 export const ExperienceEN: string = "Experience";
-export const SpokenLanguages: SpokenLanguage[] = [
+export const seemoreEN: string = "Learn More";
+export const durationEN: string = "Duration";
+export const SpokenLanguagesEN: SpokenLanguage[] = [
     {
         name: "English",
         level: 95,
@@ -56,6 +58,34 @@ export const SpokenLanguages: SpokenLanguage[] = [
     },
     {
         name: "Cantonese",
+        level: 75,
+        imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/HK.svg"
+    },
+]
+
+export const SpokenLanguagesJP: SpokenLanguage[] = [
+    {
+        name: "英語",
+        level: 95,
+        imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/GB.svg"
+    },
+    {
+        name: "中国語",
+        level: 80,
+        imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/CN.svg"
+    },
+    {
+        name: "日本語",
+        level: 60,
+        imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/JP.svg"
+    },
+    {
+        name: "マレー語",
+        level: 70,
+        imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/MY.svg"
+    },
+    {
+        name: "広東語",
         level: 75,
         imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/HK.svg"
     },

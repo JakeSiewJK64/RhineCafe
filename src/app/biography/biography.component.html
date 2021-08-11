@@ -98,7 +98,7 @@
             <img draggable="false" [src]="education.imgUrl" alt="INTI" width="50px">
             <h4>{{ education.name }}</h4>
             <span>{{ education.programme }}</span>
-            <span>Duration: {{ education.duration }} {{ isEN ? 'Years' : '年' }}</span>
+            <span>{{ duration }}: {{ education.duration }} {{ isEN ? 'Years' : '年' }}</span>
           </div>
         </mat-card-content>
       </mat-card>
@@ -111,7 +111,7 @@
             <img draggable="false" [src]="education.imgUrl" alt="INTI" width="50px">
             <h4>{{ education.name }}</h4>
             <span>{{ education.programme }}</span>
-            <span>Duration: {{ education.duration }} {{ isEN ? 'Years' : '年' }}</span>
+            <span>{{ duration }}: {{ education.duration }} {{ isEN ? 'Years' : '年' }}</span>
           </div>
         </mat-card-content>
       </mat-card>
@@ -157,7 +157,7 @@
           </div>
           <div fxLayout="row">
             <mat-icon>event</mat-icon>
-            <span>Duration: {{ experience.duration }}</span>
+            <span>{{ duration }}: {{ experience.duration }}</span>
           </div>
         </div>
       </mat-card-content>
@@ -171,12 +171,12 @@
           </div>
           <div fxLayout="row">
             <mat-icon>event</mat-icon>
-            <span>Duration: {{ experience.duration }}</span>
+            <span>{{ duration }}: {{ experience.duration }}</span>
           </div>
         </div>
       </mat-card-content>
       <mat-card-actions fxLayoutAlign="end end">
-        <button mat-flat-button (click)="showDialog(experience.name)">Learn More</button>
+        <button mat-flat-button (click)="showDialog(experience.name)">{{ seemore }}</button>
       </mat-card-actions>
     </mat-card>
   </div>

@@ -9,3 +9,6 @@ export const EducationJP: string = "教育";
 export const SpokenLanguageJP: string = "話せる言語";
 export const ComputerLanguageJP: string = "プログラミング言語";
 export const ExperienceJP: string = "経験";
+export const seemoreJP: string = "もっと見る";
+export const durationJP: string = "期間";
+
