@@ -114,6 +114,18 @@
         </mat-card-content>
       </mat-card>
     </div>
+    <div class="programming-languages-section mat-elevation-z0 w-75 mt-3">
+      <h4>Computer Languages</h4>
+      <div fxLayoutGap="5px">
+        <div fxLayout="column" *ngFor="let knowledge of programming_knowledge">
+          <span>{{ knowledge.name }}</span>
+          <div fxLayout="row">
+            <img [src]="knowledge.imgUrl" alt="">
+            <mat-progress-bar mode="determinate" [value]="knowledge.level" class="mt-4"></mat-progress-bar>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <mat-divider></mat-divider>
   <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="20px" class="m-4 experience-division">
