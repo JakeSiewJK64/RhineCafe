@@ -41,16 +41,21 @@ export const SpokenLanguages: SpokenLanguage[] = [
         level: 70,
         imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/MY.svg"
     },
+    {
+        name: "Cantonese",
+        level: 75,
+        imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/HK.svg"
+    },
 ]
 
 export const ProgrammingKnowledge: ProgrammingLanguage[] = [
     {
-        level: 60,
+        level: 80,
         name: "Java",
         imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/java/java-plain.svg"
     },
     {
-        level: 60,
+        level: 80,
         name: "C#",
         imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/csharp/csharp-plain.svg"
 
@@ -61,32 +66,32 @@ export const ProgrammingKnowledge: ProgrammingLanguage[] = [
         imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/python/python-plain.svg"
     },
     {
-        level: 83,
+        level: 90,
         name: "HTML",
         imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/html5/html5-plain.svg"
     },
     {
-        level: 3,
+        level: 90,
         name: "CSS",
         imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/css3/css3-plain.svg"
     },
     {
-        level: 50,
+        level: 70,
         name: "JavaScript",
         imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/javascript/javascript-plain.svg"
     },
     {
-        level: 85,
+        level: 80,
         name: "Typescript",
         imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/typescript/typescript-plain.svg"
     },
     {
-        level: 87,
+        level: 60,
         name: "Microsoft SQL",
         imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"
     },
     {
-        level: 55,
+        level: 50,
         name: "PostgreSQL",
         imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/postgresql/postgresql-original-wordmark.svg"
     },

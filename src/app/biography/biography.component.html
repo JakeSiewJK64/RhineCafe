@@ -1,7 +1,8 @@
 <div fxLayout="column" class="w-100">
   <div fxLayout="column" class="m-4">
     <div class="w-100 ms-auto me-auto" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="5px">
-      <img draggable="false" class="container-1-anim" src="https://avatars.githubusercontent.com/u/47139291?v=4" alt="avatar">
+      <img draggable="false" class="container-1-anim" src="https://avatars.githubusercontent.com/u/47139291?v=4"
+        alt="avatar">
       <h3 class="name-container-anim">Jake Siew Joe Kane</h3>
       <span class="text-center w-50 subtitle-container-anim">{{ description }}</span>
       <div class="wrapper">
@@ -18,22 +19,23 @@
           </a>
         </div>
       </div>
-      <div>
-        <div fxLayout='row' fxLayoutGap="10px">
-          <div fxLayout="row">
-            <mat-icon>send</mat-icon>
-            <a href="mailto:joekanesiew@outlook.com">
-              <span>joekanesiew@outlook.com</span>
-            </a>
-          </div>
-          <div class="vertical-line"></div>
-          <div fxLayout="row">
-            <i class="bi bi-github h4 me-1"></i>
-            <a href="https://github.com/JakeSiewJK64">
-              <span>JakeSiewJK64</span>
-            </a>
-          </div>
+      <div fxLayout='row' fxLayoutGap="10px">
+        <div fxLayout="row">
+          <mat-icon>send</mat-icon>
+          <a href="mailto:joekanesiew@outlook.com">
+            <span>joekanesiew@outlook.com</span>
+          </a>
         </div>
+        <div class="vertical-line"></div>
+        <div fxLayout="row">
+          <i class="bi bi-github h4 me-1"></i>
+          <a href="https://github.com/JakeSiewJK64">
+            <span>JakeSiewJK64</span>
+          </a>
+        </div>
+      </div>
+      <div fxLayout="row" class="download-resume cursor-pointer" matRipple (click)="download()">
+        <span>Download Resume</span>
       </div>
     </div>
   </div>
@@ -114,26 +116,29 @@
         </mat-card-content>
       </mat-card>
     </div>
-    <div class="programming-languages-section mat-elevation-z0 w-75 mt-3">
-      <h4>Computer Languages</h4>
-      <div fxLayoutGap="5px">
-        <div fxLayout="column" *ngFor="let knowledge of programming_knowledge">
-          <span>{{ knowledge.name }}</span>
-          <div fxLayout="row">
-            <img draggable="false" [src]="knowledge.imgUrl" alt="">
-            <mat-progress-bar mode="determinate" [value]="knowledge.level" class="mt-4"></mat-progress-bar>
+    <div fxLayout="row" class="w-75 languages-section">
+      <div class="programming-languages-section mat-elevation-z0 w-100 mt-3">
+        <h4>Computer Languages</h4>
+        <div fxLayoutGap="5px">
+          <div fxLayout="column" *ngFor="let knowledge of programming_knowledge">
+            <span>{{ knowledge.name }}</span>
+            <div fxLayout="row">
+              <img draggable="false" [src]="knowledge.imgUrl" alt="">
+              <mat-progress-bar mode="determinate" [value]="knowledge.level" class="mt-4"></mat-progress-bar>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="programming-languages-section mat-elevation-z0 w-75 mt-3">
-      <h4>Spoken Languages</h4>
-      <div fxLayoutGap="5px">
-        <div fxLayout="column" *ngFor="let language of spoken_languages">
-          <span>{{ language.name }}</span>
-          <div fxLayout="row">
-            <img draggable="false" [src]="language.imgUrl" alt="">
-            <mat-progress-bar color="warn" mode="determinate" [value]="language.level" class="mt-4"></mat-progress-bar>
+      <div class="programming-languages-section mat-elevation-z0 w-100 mt-3">
+        <h4>Spoken Languages</h4>
+        <div fxLayoutGap="5px">
+          <div fxLayout="column" *ngFor="let language of spoken_languages">
+            <span>{{ language.name }}</span>
+            <div fxLayout="row">
+              <img draggable="false" [src]="language.imgUrl" alt="">
+              <mat-progress-bar color="warn" mode="determinate" [value]="language.level" class="mt-4">
+              </mat-progress-bar>
+            </div>
           </div>
         </div>
       </div>

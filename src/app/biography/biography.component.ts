@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TdDialogService } from '@covalent/core/dialogs';
 import { experiences, ProgrammingKnowledge, ProgrammingLanguage, SpokenLanguage, SpokenLanguages } from './_dialogs/experience-dialog/experience-contants';
 import { ExperienceDialogComponent } from './_dialogs/experience-dialog/experience-dialog.component';
@@ -10,7 +11,7 @@ import { ExperienceDialogComponent } from './_dialogs/experience-dialog/experien
 })
 export class BiographyComponent implements OnInit {
 
-  constructor(private dialogService: TdDialogService) { }
+  constructor(private dialogService: TdDialogService, private router: Router) { }
 
   description: string = `
   Hi! My name is Jake Siew Joe Kane, an avid full stack web developer. I also have an interest in Machine Learning and AI related fields and plan on building my own virtual assistant one day like JARVIS. I hope to journey into this endeavor with you.
@@ -49,6 +50,10 @@ export class BiographyComponent implements OnInit {
   spoken_languages: SpokenLanguage[] = SpokenLanguages.sort((x, y) => y.level - x.level);
 
   ngOnInit(): void {
+  }
+  
+  download() {
+    window.location.href = "https://github.com/JakeSiewJK64/ImageWarehouse/raw/main/Employment/JoeKane_Resume.pdf"
   }
 
   showDialog(company: string) {
