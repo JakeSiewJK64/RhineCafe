@@ -7,7 +7,7 @@
     </div>
     <span class="example-spacer"></span>
   </div>
-  <button mat-stroked-button (click)="switchLanguage()">{{ currentLanguage === '/' ? 'JP' : 'EN'  }}</button>
+  <button mat-stroked-button (click)="switchLanguage()">{{ isEN ? 'JP' : 'EN'  }}</button>
   <div fxLayoutAlign="end end" fxHide.xs fxShow.md>
     <button mat-flat-button *ngFor="let item of alter_links">{{ item }}</button>
   </div>

@@ -24,10 +24,15 @@ export interface ProgrammingLanguage {
     imgUrl: string
 }
 
-export const BioDescription: string = "Hi! My name is Jake Siew Joe Kane, an avid full stack web developer. I also have an interest in Machine Learning and AI related fields and plan on building my own virtual assistant one day like JARVIS. I hope to journey into this endeavor with you."
-
+export const BioDescriptionEN: string = "Hi! My name is Jake Siew Joe Kane, an avid full stack web developer. I also have an interest in Machine Learning and AI related fields and plan on building my own virtual assistant one day like JARVIS. I hope to journey into this endeavor with you."
+export const DownloadResumeEN: string = "Download Resume";
 export const ResumeUrl: string = "https://github.com/JakeSiewJK64/ImageWarehouse/raw/main/Employment/JoeKane_Resume.pdf";
-
+export const FrameworkEN: string = "Frameworks";
+export const ToolsEN: string = "Tools";
+export const EducationEN: string = "Education";
+export const ComputerLanguageEN: string = "Computer Language";
+export const SpokenLanguageEN: string = "Spoken Language";
+export const ExperienceEN: string = "Experience";
 export const SpokenLanguages: SpokenLanguage[] = [
     {
         name: "English",

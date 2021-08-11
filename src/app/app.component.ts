@@ -34,9 +34,7 @@ export class AppComponent {
   }
 
   switchLanguage() {
-    if (this.currentLanguage === '/') this.currentLanguage = 'jp';
-    else this.currentLanguage = '/';
-    this.isEN = this.currentLanguage === '/';
+    this.isEN = localStorage.getItem(DisplayLanguage) == 'en';
     localStorage.setItem(DisplayLanguage, localStorage.getItem(DisplayLanguage) === 'jp' ? 'en' : 'jp');
     this.eventEmitter.updateLanguage();
     this.load();

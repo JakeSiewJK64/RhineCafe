@@ -35,7 +35,7 @@
         </div>
       </div>
       <div fxLayout="row" class="download-resume cursor-pointer" matRipple (click)="download()">
-        <span>Download Resume</span>
+        <span>{{ downloadResume }}</span>
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@
     fxHide.xs>
     <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center">
       <mat-card class="mat-elevation-z5">
-        <mat-card-title>Frameworks</mat-card-title>
+        <mat-card-title>{{ displayframework }}</mat-card-title>
         <mat-card-content>
           <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
             <div *ngFor="let framework of frameworks" class="social-tab">
@@ -54,7 +54,7 @@
         </mat-card-content>
       </mat-card>
       <mat-card class="mat-elevation-z5">
-        <mat-card-title>Tools</mat-card-title>
+        <mat-card-title>{{ displaytools }}</mat-card-title>
         <mat-card-content>
           <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
             <div *ngFor="let tool of tools" class="social-tab">
@@ -68,7 +68,7 @@
   <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="5px" class="m-4 tools-n-frameworks" fxHide.md
     fxHide.lg fxHide.xl fxHide.gt-sm>
     <mat-card class="mat-elevation-z5 mt-3">
-      <mat-card-title>Frameworks</mat-card-title>
+      <mat-card-title>{{ displayframework }}</mat-card-title>
       <mat-card-content>
         <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
           <div *ngFor="let framework of frameworks" class="social-tab">
@@ -78,7 +78,7 @@
       </mat-card-content>
     </mat-card>
     <mat-card class="mat-elevation-z5 mt-3">
-      <mat-card-title>Tools</mat-card-title>
+      <mat-card-title>{{ displaytools }}</mat-card-title>
       <mat-card-content>
         <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
           <div *ngFor="let tool of tools" class="social-tab">
@@ -90,7 +90,7 @@
   </div>
   <mat-divider></mat-divider>
   <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="5px" class="m-4 education-section">
-    <h3>Education</h3>
+    <h3>{{ displayeducation }}</h3>
     <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="center center" fxHide.xs fxHide.sm>
       <mat-card class="mat-elevation-z5" *ngFor="let education of educations">
         <mat-card-content>
@@ -98,7 +98,7 @@
             <img draggable="false" [src]="education.imgUrl" alt="INTI" width="50px">
             <h4>{{ education.name }}</h4>
             <span>{{ education.programme }}</span>
-            <span>Duration: {{ education.duration }} Years</span>
+            <span>Duration: {{ education.duration }} {{ isEN ? 'Years' : '年' }}</span>
           </div>
         </mat-card-content>
       </mat-card>
@@ -111,14 +111,14 @@
             <img draggable="false" [src]="education.imgUrl" alt="INTI" width="50px">
             <h4>{{ education.name }}</h4>
             <span>{{ education.programme }}</span>
-            <span>Duration: {{ education.duration }} Years</span>
+            <span>Duration: {{ education.duration }} {{ isEN ? 'Years' : '年' }}</span>
           </div>
         </mat-card-content>
       </mat-card>
     </div>
     <div fxLayout="row" class="w-75 languages-section">
       <div class="programming-languages-section mat-elevation-z0 w-100 mt-3">
-        <h4>Computer Languages</h4>
+        <h4>{{ displaycomputerlanguage }}</h4>
         <div fxLayoutGap="5px">
           <div fxLayout="column" *ngFor="let knowledge of programming_knowledge">
             <span>{{ knowledge.name }}</span>
@@ -130,7 +130,7 @@
         </div>
       </div>
       <div class="programming-languages-section mat-elevation-z0 w-100 mt-3">
-        <h4>Spoken Languages</h4>
+        <h4>{{ displayspokenlanguage }}</h4>
         <div fxLayoutGap="5px">
           <div fxLayout="column" *ngFor="let language of spoken_languages">
             <span>{{ language.name }}</span>
@@ -146,7 +146,7 @@
   </div>
   <mat-divider></mat-divider>
   <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="20px" class="m-4 experience-division">
-    <h3>Experience</h3>
+    <h3>{{ displayexperience }}</h3>
     <mat-card *ngFor="let experience of work_experience" class="w-75 mat-elevation-z5" fxLayout="column">
       <mat-card-content fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center" fxHide.xs fxHide.sm>
         <img draggable="false" class="me-3" [src]="experience.imgUrl">
