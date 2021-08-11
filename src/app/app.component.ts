@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   date: Date = new Date();
+  alter_links: any[] = ["About", "Experience", "Projects", "Education"];
 }

@@ -7,12 +7,15 @@
     </div>
     <span class="example-spacer"></span>
   </div>
-  <div fxLayoutAlign="end end">
-    <button mat-flat-button>About</button>
-    <button mat-flat-button>Experience</button>
-    <button mat-flat-button>Projects</button>
-    <button mat-flat-button>Education</button>
+  <div fxLayoutAlign="end end" fxHide.xs fxShow.md>
+    <button mat-flat-button *ngFor="let item of alter_links">{{ item }}</button>
   </div>
+  <div fxShow.xs fxHide.md fxHide [matMenuTriggerFor]="alter_link" mat-button class="cursor-pointer">
+    <mat-icon>more_vert</mat-icon>
+  </div>
+  <mat-menu #alter_link="matMenu">
+    <button mat-menu-item *ngFor="let item of alter_links">{{ item }}</button>
+  </mat-menu>
 </mat-toolbar>
 <router-outlet></router-outlet>
 <mat-footer fxLayoutAlign="center center" class="w-100">
