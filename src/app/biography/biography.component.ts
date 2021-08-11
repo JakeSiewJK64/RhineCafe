@@ -33,7 +33,6 @@ export class BiographyComponent implements OnInit {
   }
 
   load() {
-    console.log("something");
     this.username = localStorage.getItem(DisplayLanguage) === 'jp' ? UsernameJP : UsernameEN;
   }
 
