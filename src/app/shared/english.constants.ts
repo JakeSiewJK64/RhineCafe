@@ -1,3 +1,7 @@
+export const RhineCafeEN: string = "Rhine Cafe";
+export const AlterLinkEN: string[] = ["About", "Experience", "Projects", "Education"];
+export const DisplayLanguage: string = "DisplayLanguage";
+export const UsernameEN: string = "Jake Siew Joe Kane";
 export interface Experience {
     name: string,
     duration: string,

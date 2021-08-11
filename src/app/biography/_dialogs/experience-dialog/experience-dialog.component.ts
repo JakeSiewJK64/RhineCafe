@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { experiences } from '../../../shared/experience-contants';
+import { experiences } from '../../../shared/english.constants';
 @Component({
   selector: 'app-experience-dialog',
   templateUrl: './experience-dialog.component.html',
