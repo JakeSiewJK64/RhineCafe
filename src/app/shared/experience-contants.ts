@@ -20,6 +20,10 @@ export interface ProgrammingLanguage {
     imgUrl: string
 }
 
+export const BioDescription: string = "Hi! My name is Jake Siew Joe Kane, an avid full stack web developer. I also have an interest in Machine Learning and AI related fields and plan on building my own virtual assistant one day like JARVIS. I hope to journey into this endeavor with you."
+
+export const ResumeUrl: string = "https://github.com/JakeSiewJK64/ImageWarehouse/raw/main/Employment/JoeKane_Resume.pdf";
+
 export const SpokenLanguages: SpokenLanguage[] = [
     {
         name: "English",
@@ -95,6 +99,34 @@ export const ProgrammingKnowledge: ProgrammingLanguage[] = [
         name: "PostgreSQL",
         imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/postgresql/postgresql-original-wordmark.svg"
     },
+]
+
+export const social_buttons: any = [
+    { imgUrl: "https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg", link: "https://www.linkedin.com/in/jake-siew-joe-kane-a411811b5/" },
+    { imgUrl: "https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/facebook.svg", link: "https://www.facebook.com/DataScienceexe-101972195168927" },
+]
+
+export const educations: any = [
+    { name: "INTI International College Subang", programme: "Diploma in Information Technology (DITN)", duration: 2, imgUrl: "https://studymasters.my/wp-content/uploads/2017/07/INTI-International-University-College.png" },
+    { name: "Campus Rangers", programme: "IGCSE", duration: 2, imgUrl: "https://www.campusrangers.edu.my/wp-content/uploads/2020/10/Logo.png" },
+]
+
+export const tools = [
+    { imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/visualstudio/visualstudio-plain.svg" },
+    { imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/vscode/vscode-original.svg" },
+    { imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/linux/linux-original.svg" },
+    { imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/npm/npm-original-wordmark.svg" },
+    { imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/google/google-original.svg" },
+]
+
+export const frameworks = [
+    { imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/angularjs/angularjs-plain.svg" },
+    { imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/spring/spring-original.svg" },
+    { imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/dotnetcore/dotnetcore-original.svg" },
+    { imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/sass/sass-original.svg" },
+    { imgUrl: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" },
+    { imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/mongodb/mongodb-original-wordmark.svg" },
+    { imgUrl: "https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/bootstrap/bootstrap-plain.svg" },
 ]
 
 export const experiences: Experience[] = [

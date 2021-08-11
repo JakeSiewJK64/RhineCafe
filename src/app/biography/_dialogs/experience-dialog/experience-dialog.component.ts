@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { experiences } from './experience-contants';
+import { experiences } from '../../../shared/experience-contants';
 @Component({
   selector: 'app-experience-dialog',
   templateUrl: './experience-dialog.component.html',
@@ -12,9 +12,7 @@ export class ExperienceDialogComponent implements OnInit {
     private dialogRef: MatDialogRef<ExperienceDialogComponent>) { }
 
   dataSource: any;
-  name: string = '';
-  version_control: string = "";
-  duration: string = "";
+
   ngOnInit(): void {
     this.load();
   }
