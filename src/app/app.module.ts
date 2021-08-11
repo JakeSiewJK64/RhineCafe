@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { BiographyComponent } from './biography/biography.component';
 import { ExperienceDialogComponent } from './biography/_dialogs/experience-dialog/experience-dialog.component';
+import { ScrollToTopComponent } from './shared/components/scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BiographyComponent,
-    ExperienceDialogComponent
+    ExperienceDialogComponent,
+    ScrollToTopComponent
   ],
   imports: [
     BrowserModule,
