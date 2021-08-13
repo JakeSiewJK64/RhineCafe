@@ -48,6 +48,11 @@ export const BlogDataEN: Blog[] = [
         name: "Github Tutorial",
         routeUrl: "github-tutorial",
         imgUrl: "https://www.zbw-mediatalk.eu/wp-content/uploads/2015/09/github-cover.jpg"
+    },
+    {
+        name: "Github Pull Requests",
+        routeUrl: "github-pr",
+        imgUrl: "https://miro.medium.com/max/1334/0*TZOvqmRL5cUl69TC.png"
     }
 ]
 
