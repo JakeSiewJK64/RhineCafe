@@ -1,11 +1,12 @@
-mat-card img {
-    height: auto;
-}
-
 .blog-division mat-card{
     width: 26rem;
     height: 15rem;
     transition: transform .5s;
+}
+
+.blog-division img{
+    width: 20rem;
+    height: 8rem;
 }
 
 .education-section mat-card {
