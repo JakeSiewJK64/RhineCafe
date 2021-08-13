@@ -2,6 +2,12 @@ mat-card img {
     height: auto;
 }
 
+.blog-division mat-card{
+    height: 15rem;
+    width: auto;
+    transition: transform .5s;
+}
+
 .education-section mat-card {
     width: 26rem;
     height: 200px;
@@ -11,7 +17,7 @@ mat-card img {
 .tools-n-frameworks mat-card {
     width: 26rem;
     height: 200px;
-    transition: transform 0.2s;
+    transition: transform .5s;
 }
 
 mat-card:hover {

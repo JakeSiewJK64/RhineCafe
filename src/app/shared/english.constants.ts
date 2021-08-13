@@ -24,6 +24,12 @@ export interface ProgrammingLanguage {
     imgUrl: string
 }
 
+export interface Blog {
+    name: string,
+    routeUrl: string,
+    imgUrl: string
+}
+
 export const BioDescriptionEN: string = "Hi! My name is Jake Siew Joe Kane, an avid full stack web developer. I also have an interest in Machine Learning and AI related fields and plan on building my own virtual assistant one day like JARVIS. I hope to journey into this endeavor with you."
 export const DownloadResumeEN: string = "Download Resume";
 export const ResumeUrl: string = "https://github.com/JakeSiewJK64/ImageWarehouse/raw/main/Employment/JoeKane_Resume.pdf";
@@ -35,6 +41,16 @@ export const SpokenLanguageEN: string = "Spoken Language";
 export const ExperienceEN: string = "Experience";
 export const seemoreEN: string = "Learn More";
 export const durationEN: string = "Duration";
+export const blogEN: string = "Blog";
+
+export const BlogDataEN: Blog[] = [
+    {
+        name: "Github Tutorial",
+        routeUrl: "github-tutorial",
+        imgUrl: "https://www.zbw-mediatalk.eu/wp-content/uploads/2015/09/github-cover.jpg"
+    }
+]
+
 export const SpokenLanguagesEN: SpokenLanguage[] = [
     {
         name: "English",

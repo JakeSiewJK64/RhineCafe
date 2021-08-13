@@ -182,4 +182,23 @@
       </mat-card-actions>
     </mat-card>
   </div>
+  <div fxLayoutAlign="center center" fxLayout="column wrap" fxLayoutGap="20px" class="m-4 blog-division">
+    <h3>{{ displayBlog }}</h3>
+    <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center" class="w-75">
+      <mat-card *ngFor="let blog of blogENData" class="w-25 mat-elevation-z5 m-3" fxLayout="column">
+        <mat-card-content fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="center center" fxHide.xs fxHide.sm>
+          <img draggable="false" [src]="blog.imgUrl" width="235">
+          <div fxLayout="column">
+            <div fxLayout="row">
+              <mat-icon>edit</mat-icon>
+              <strong>{{ blog.name }}</strong>
+            </div>
+          </div>
+        </mat-card-content>
+        <mat-card-actions fxLayoutAlign="center center" class="h-100" fxLayout="column" fxLayoutGap="10px">
+          <button mat-stroked-button (click)="navigateToUrl(blog.routeUrl)">Learn More</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
 </div>

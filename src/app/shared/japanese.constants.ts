@@ -11,4 +11,5 @@ export const ComputerLanguageJP: string = "プログラミング言語";
 export const ExperienceJP: string = "経験";
 export const seemoreJP: string = "もっと見る";
 export const durationJP: string = "期間";
+export const blogJP: string = "ブローグ";
 
