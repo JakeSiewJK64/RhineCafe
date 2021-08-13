@@ -146,8 +146,9 @@ export const social_buttons: any = [
 ]
 
 export const educations: any = [
-    { name: "INTI International College Subang", programme: "Diploma in Information Technology (DITN)", duration: 2, imgUrl: "https://studymasters.my/wp-content/uploads/2017/07/INTI-International-University-College.png" },
-    { name: "Campus Rangers", programme: "IGCSE", duration: 2, imgUrl: "https://www.campusrangers.edu.my/wp-content/uploads/2020/10/Logo.png" },
+    { name: "Swinburne University of Technology", programme: "Bachelor of Computer Science (BCSSUT)", duration: 2, imgUrl: "https://www.swinburne.edu.au/content/dam/media/brand/logo-long-full.svg", displayWidth: "170" },
+    { name: "INTI International College Subang", programme: "Diploma in Information Technology (DITN)", duration: 2, imgUrl: "https://studymasters.my/wp-content/uploads/2017/07/INTI-International-University-College.png", displayWidth: "330" },
+    { name: "Campus Rangers", programme: "IGCSE", duration: 2, imgUrl: "https://www.campusrangers.edu.my/wp-content/uploads/2020/10/Logo.png", displayWidth: "330" },
 ]
 
 export const tools = [

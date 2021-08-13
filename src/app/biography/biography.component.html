@@ -89,13 +89,14 @@
     </mat-card>
   </div>
   <mat-divider></mat-divider>
+  <!-- show desktop mode -->
   <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="5px" class="m-4 education-section">
     <h3>{{ displayeducation }}</h3>
     <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="center center" fxHide.xs fxHide.sm>
       <mat-card class="mat-elevation-z5" *ngFor="let education of educations">
         <mat-card-content>
           <div fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="center center">
-            <img draggable="false" [src]="education.imgUrl" alt="INTI" width="50px">
+            <img draggable="false" [src]="education.imgUrl" alt="INTI" [width]="education.displayWidth">
             <h4>{{ education.name }}</h4>
             <span>{{ education.programme }}</span>
             <span>{{ duration }}: {{ education.duration }} {{ isEN ? 'Years' : '年' }}</span>
@@ -103,12 +104,13 @@
         </mat-card-content>
       </mat-card>
     </div>
+    <!-- show mobile mode -->
     <div fxLayout="column wrap" fxLayoutGap="20px" fxLayoutAlign="center center" fxHide.md fxHide.lg fxHide.xl
       fxHide.gt-sm>
       <mat-card class="mat-elevation-z5" *ngFor="let education of educations">
         <mat-card-content>
           <div fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="center center">
-            <img draggable="false" [src]="education.imgUrl" alt="INTI" width="50px">
+            <img draggable="false" [src]="education.imgUrl" alt="INTI" [width]="education.displayWidth">
             <h4>{{ education.name }}</h4>
             <span>{{ education.programme }}</span>
             <span>{{ duration }}: {{ education.duration }} {{ isEN ? 'Years' : '年' }}</span>
