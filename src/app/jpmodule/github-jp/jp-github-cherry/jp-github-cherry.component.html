@@ -1,1 +1,62 @@
-<p>jp-github-cherry works!</p>
+<div fxLayoutAlign="center center" fxLayout="column" class="w-100 mb-5">
+    <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/cherry-picking.jpg"
+        class="w-50" alt="">
+    <div fxLayout="column" fxLayoutAlign="start start" class="w-50 mb-3 intro-section">
+        <span>筆者：JakeSiewJK64</span>
+        <span>２０２１年８月１４日</span>
+    </div>
+    <h2>チェリーピックって何？</h2>
+    <div class="w-50">
+        <div>
+            <span>
+                チェリーピックはお好みのコミットを他のブランチに移動する行動です。
+                チェリーピックの役に立ちポイントは自分のブランチで困ってる場合には他のブランチ
+                に移動できること、貢献が無駄になれないということです。この記事ではどうやってギットハブデスクトップ
+                を使ってチェリーピッくをすることを説明したいとつもりです👌。
+            </span>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>第１つ目</h3>
+            ギットハブデスクトップのブランチ変更履歴に行って、お好みコミットを右クリクして、「Cherry Pick Commit」を選んで。こういう感じ：
+            <img class="me-auto ms-auto"
+                src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/cherry_pick.jpg"
+                alt="Cherry Pick Right Click">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>第２つ目</h3>
+            新しいウインドウが現れ、お好みブランチを選ぶと聞いてになります。子の場合、好きなブランチを選んで。
+            <img class="me-auto ms-auto"
+                src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/select_branch_to_cherry_pick.jpg"
+                alt="Cherry Pick Branch Select">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <div class="me-auto">
+                <i>*注意:</i>
+            </div>
+            もし自分のブランチで変更が有ったら警告が表示されですが、「Stash changes and continue（変更を取り置く）」を安心して選んでください。取り置きした変更が後戻れます。
+            だが、もし「Stash」をする前に自分の「Stash」がまだ空いていない場合には古いバージョンが削除されます。ですから、お気おつけて選びなさい。
+            <img class="me-auto ms-auto"
+                src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/stash_changes.jpg"
+                alt="Stash Changes">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>まとめ</h3>
+            <span>
+                では、説明は終了です。ご読んでくれたありがとうございます。この記事は役に立ったら良かったです。このブログはギットハブデスクトップに初めて使っての方へ教えたいつもりで書いたんです。
+                チェリーピッくとはとても役に立つと思う。ですが、マージコンフリクトとか　「Merge Conflict(コミットの打ち消し)」多すぎとか気おつけるようにしてください。
+            </span>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>他のギットハブに関する記事:</h3>
+            <ol>
+                <li *ngFor="let item of alterLinks">
+                    <span class="text-success cursor-pointer" (click)="navigatetToBlog(item)">{{ item.name }}</span>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
