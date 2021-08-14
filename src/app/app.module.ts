@@ -10,6 +10,7 @@ import { ExperienceDialogComponent } from './biography/_dialogs/experience-dialo
 import { ScrollToTopComponent } from './shared/components/scroll-to-top/scroll-to-top.component';
 import { GithubTutorialComponent } from './github-tutorial/github-tutorial.component';
 import { GithubPrComponent } from './github-pr/github-pr.component';
+import { GithubCherryComponent } from './github-cherry/github-cherry.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GithubPrComponent } from './github-pr/github-pr.component';
     ExperienceDialogComponent,
     ScrollToTopComponent,
     GithubTutorialComponent,
-    GithubPrComponent
+    GithubPrComponent,
+    GithubCherryComponent
   ],
   imports: [
     BrowserModule,
