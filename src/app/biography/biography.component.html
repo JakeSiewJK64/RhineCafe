@@ -185,7 +185,7 @@
   <div fxLayoutAlign="center center" fxLayout="column wrap" fxLayoutGap="20px" class="m-4 blog-division">
     <h3>{{ displayBlog }}</h3>
     <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center" class="w-75" fxHide.xs fxHide.sm>
-      <mat-card *ngFor="let blog of blogENData" class="mat-elevation-z5 m-3" fxLayout="column">
+      <mat-card *ngFor="let blog of displayBlogData" class="mat-elevation-z5 m-3" fxLayout="column">
         <mat-card-content fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="center center">
           <img draggable="false" [src]="blog.imgUrl" width="235">
           <div fxLayout="column">
@@ -196,13 +196,13 @@
           </div>
         </mat-card-content>
         <mat-card-actions fxLayoutAlign="end end">
-          <button mat-stroked-button (click)="navigateToUrl(blog.routeUrl)">Learn More</button>
+          <button mat-stroked-button (click)="navigateToUrl(blog.routeUrl)">{{ seemore }}</button>
         </mat-card-actions>
       </mat-card>
     </div>
     <div fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center" class="w-75" fxHide.md fxHide.lg fxHide.xl
       fxHide.hide-sm fxHide.gt-sm fxShow.sm>
-      <mat-card *ngFor="let blog of blogENData" class="mat-elevation-z5 m-3" fxLayout="column">
+      <mat-card *ngFor="let blog of displayBlogData" class="mat-elevation-z5 m-3" fxLayout="column">
         <mat-card-content fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="center center">
           <img draggable="false" [src]="blog.imgUrl" width="235">
           <div fxLayout="column">
@@ -213,7 +213,7 @@
           </div>
         </mat-card-content>
         <mat-card-actions fxLayoutAlign="center center" class="h-100" fxLayout="column" fxLayoutGap="10px">
-          <button mat-stroked-button (click)="navigateToUrl(blog.routeUrl)">Learn More</button>
+          <button mat-stroked-button (click)="navigateToUrl(blog.routeUrl)">{{ seemore }}</button>
         </mat-card-actions>
       </mat-card>
     </div>

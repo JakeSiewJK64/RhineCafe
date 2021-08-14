@@ -20,7 +20,7 @@ import { GithubCherryComponent } from './github-cherry/github-cherry.component';
     ScrollToTopComponent,
     GithubTutorialComponent,
     GithubPrComponent,
-    GithubCherryComponent
+    GithubCherryComponent,
   ],
   imports: [
     BrowserModule,

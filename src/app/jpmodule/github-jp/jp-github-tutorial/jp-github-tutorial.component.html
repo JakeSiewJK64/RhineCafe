@@ -1,0 +1,90 @@
+<div fxLayoutAlign="center center" fxLayout="column" class="w-100 mb-5">
+    <img src="https://www.zbw-mediatalk.eu/wp-content/uploads/2015/09/github-cover.jpg" class="w-50" alt="">
+    <div fxLayout="column" fxLayoutAlign="start start" class="w-50 mb-3 intro-section">
+        <span>筆者：JakeSiewJK64</span>
+        <span>２０２１年８月１４日</span>
+    </div>
+    <h2>Github Desktop 経てコードバージョンを管理</h2>
+    <div class="w-50">
+        <div>
+            <span>
+                Github Desktop(ギートハブデスクトップ)はプログラミングコードの履歴とバージョンの管理システムGUIで現るソフトウェアです。
+                プロジェクトを行われ前に、ギートハブのリポジトリのセットアップできないなら困る。このブログでは、基本なセットアップを説明したいと思います。
+            </span>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>第１つ目</h3>
+            <span>まずは、リポジトリのサイトに行って、コードのURL（Codeのボタンで見つける）をコーピーして。</span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/repo_site.jpg"
+                class="w-100" alt="">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>第２つ目</h3>
+            <span>ギートハブデスクトップに戻って,ファイル(File) の設定に押して、Clone
+                Repository（リポジトリをクーロン）を選ぶ。それとも <strong>CTRL + SHIFT + O</strong>もできます.
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/clone_repo.jpg"
+                class="w-100" alt="">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>第３つ目</h3>
+            <span>
+                Clone Repositoryを選んだ後、レポジトリの設定が現れる。その際に、第１つ目にコーピーしたリポジトリのURLを 「Repository URL」に入力して。「Clone」のボタンを押して前に
+                ユーザーに探しやすいの為「Local Path」を確認するのは重要です。
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/clone_repo_setup.jpg"
+                class="w-100" alt="">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>大４つ目</h3>
+            <span>
+                このままよくできました！リポジトリをクローンするのは成功です。後は、念の為 Main Branch に何が困る戻れない場合を予防するとか大きなコードを変更があるとか
+                新しいブランチが作れる。ブランチを作る方法は、まずはギートハブデスクトップに戻れ、お好みブランチを選んで、「New Branch」を押して完成です。
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/create_branch.jpg"
+                class="w-100" alt="">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>第５つ目</h3>
+            <span>
+                ブランチの詳しい設定が現れた時、２つのブランチが現れる（今選んだブランチとMainブランチ）。お好みのブランチを選んで、そして「Create Branch」を押して完成です。
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/create_branch_options.jpg"
+                class="w-100" alt="">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>第６つめ</h3>
+            <span>
+                もし変更したコードに満足した時、変更の纏め（Summary Required）が書くことが必要です。変更のメッセージが空いても平気。そして「Commit to (ブランチの名称)」
+                を押して完成します。
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/comitting_changes.jpg"
+                class="w-100" alt="">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>纏め</h3>
+            <span>
+                でわこのポイントに着いたらおめでとうございます。今後プロジェクトを大成功になるように行ってください。「Merge Conflict」を気お付けるように
+                団長に相談することは重要です。「じゃあいまはどうすればいい？」って聞いたいなら、PRを作る方法の記事はこちらへ：
+                <span (click)="navigateToGithubPR()" class="text-success cursor-pointer">How to Create a Pull
+                    Request</span>.
+            </span>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>他のGithubに関する記事:</h3>
+            <ol>
+                <li *ngFor="let item of alterLinks">
+                    <span class="text-success cursor-pointer" (click)="navigatetToBlog(item)">{{ item.name }}</span>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>

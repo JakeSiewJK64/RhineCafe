@@ -1,3 +1,5 @@
+import { Blog } from "./english.constants";
+
 export const RhineCafeJP = "ラインカフェー";
 export const AlterLinkJP: string[] = ["自己紹介", "経験", "プロジェクト", "教育"];
 export const UsernameJP: string = "萧楚劼";
@@ -11,5 +13,23 @@ export const ComputerLanguageJP: string = "プログラミング言語";
 export const ExperienceJP: string = "経験";
 export const seemoreJP: string = "もっと見る";
 export const durationJP: string = "期間";
-export const blogJP: string = "ブローグ";
+export const blogJP: string = "記事";
+
+export const BlogDataJP: Blog[] = [
+    {
+        name: "ギートハブ初心者に説明",
+        routeUrl: "/jp/jp-github-tutorial",
+        imgUrl: "https://www.zbw-mediatalk.eu/wp-content/uploads/2015/09/github-cover.jpg"
+    },
+    {
+        name: "プルリクエストについて",
+        routeUrl: "github-pr",
+        imgUrl: "https://miro.medium.com/max/1334/0*TZOvqmRL5cUl69TC.png"
+    },
+    {
+        name: "チェリー ピックって何？",
+        routeUrl: "github-cherry",
+        imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/cherry-picking.jpg"
+    },
+]
 

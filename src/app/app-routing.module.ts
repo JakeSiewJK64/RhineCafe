@@ -26,6 +26,10 @@ const routes: Routes = [
     component: GithubCherryComponent,
     pathMatch: 'full'
   },
+  {
+    path: "jp",
+    loadChildren: () => import('./jpmodule/jpmodule.module').then(m => m.JpmoduleModule)
+  },
 ];
 
 @NgModule({
