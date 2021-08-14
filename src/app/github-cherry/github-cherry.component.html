@@ -20,20 +20,35 @@
         <div fxLayout="column" fxLayoutAlign="center center">
             <mat-divider></mat-divider>
             <h3>Step 1</h3>
-            <span>Navigate to the repository's site and copy the URL. The URL can be found under the
-                <strong>Code</strong> button</span>.
-            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/repo_site.jpg"
-                class="w-100" alt="">
+            Go to your Branch History > Right Click > Select Cherry Pick Commit. Like this:
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/cherry_pick.jpg"
+                alt="Cherry Pick Right Click">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="center center">
+            <mat-divider></mat-divider>
+            <h3>Step 2</h3>
+            A window will prompt asking you to Select a Branch to cherry pick (transfer) the selected commit to.
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/select_branch_to_cherry_pick.jpg"
+                alt="Cherry Pick Branch Select">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="center center">
+            <div class="me-auto">
+                <i>*Take Note:</i>
+            </div>
+            Should you have any existing changes in your current branch, you can stash your changes and come back to it
+            later. Don't worry, they are not deleted.
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/stash_changes.jpg"
+                alt="Stash Changes">
         </div>
         <div fxLayout="column" fxLayoutAlign="center center">
             <mat-divider></mat-divider>
             <h3>Conclusion</h3>
             <span>
-                You are all set! If you made it this far, the rest of the project should be fine, hopefully. Just beware
-                of merge conflicts. To avoid this, please consult
-                with you advisor or group leader. To proceed, you might want to check out
-                <span (click)="navigateToGithubPR()" class="text-success cursor-pointer">How to Create a Pull
-                    Request</span>.
+                That's all for Cherry Commits! Hope you found the blog useful. The Github Blog series is a way to teach
+                first time users of Github Desktop users to developers and mini group projects in college. Cherry
+                Commits is especially useful if a
+                branch is having several merge conflicts, too many commit reverts, or just unrunnable code in general.
+                Thank you for reading! ❤❤❤
             </span>
         </div>
     </div>
