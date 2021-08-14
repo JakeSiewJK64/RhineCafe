@@ -4,11 +4,13 @@ import { JpGithubTutorialComponent } from './github-jp/jp-github-tutorial/jp-git
 import { routing } from './jpmodule-routing';
 import { SharedModule } from '../shared/shared.module';
 import { JpGithubPrComponent } from './github-jp/jp-github-pr/jp-github-pr.component';
+import { JpGithubCherryComponent } from './github-jp/jp-github-cherry/jp-github-cherry.component';
 
 @NgModule({
   declarations: [
     JpGithubTutorialComponent,
-    JpGithubPrComponent
+    JpGithubPrComponent,
+    JpGithubCherryComponent
   ],
   imports: [
     CommonModule,

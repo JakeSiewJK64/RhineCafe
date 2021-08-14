@@ -2,7 +2,7 @@ import { Blog } from "./english.constants";
 
 export const RhineCafeJP = "ラインカフェー";
 export const AlterLinkJP: string[] = ["自己紹介", "経験", "プロジェクト", "教育"];
-export const UsernameJP: string = "萧楚劼";
+export const UsernameJP: string = "萧楚劼（そかつ）";
 export const DownloadResumeJP: string = "履歴書をダウンロード";
 export const BioDescriptionJP: string = `初めまして、萧楚劼（そかつ）とおもします。僕はソフトウェアエンジニアとなりたい夢を持っています。 特にAIと機器学習の技術もっと知りたいのです。その夢を叶うために一緒に一生懸命頑張りましょう。`
 export const FrameworksJP: string = "フレームワーク";
@@ -28,7 +28,7 @@ export const BlogDataJP: Blog[] = [
     },
     {
         name: "チェリー ピックって何？",
-        routeUrl: "github-cherry",
+        routeUrl: "/jp/jp-github-cherry",
         imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/cherry-picking.jpg"
     },
 ]
