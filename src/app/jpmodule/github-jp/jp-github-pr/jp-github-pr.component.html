@@ -1,1 +1,92 @@
-<p>jp-github-pr works!</p>
+<div fxLayoutAlign="center center" fxLayout="column" class="w-100 mb-5">
+    <img src="https://miro.medium.com/max/1334/0*TZOvqmRL5cUl69TC.png" class="w-50" alt="">
+    <div fxLayout="column" fxLayoutAlign="start start" class="w-50 mb-3 intro-section">
+        <span>筆者：JakeSiewJK64</span>
+        <span>２０２１年８月１４日</span>
+    </div>
+    <h2>プルリクエスト</h2>
+    <div class="w-50">
+        <div>
+            <span>
+                プルリクエストとは自分のコードをMainブランチとかお好みブランチに混ぜることにします。こういう行動のは自分の貢献を提出方法になります。
+                特定の行動がコントロリユーションとしてカウントされます：
+                <ul>
+                    <li>プルリクエストできたこと</li>
+                    <li>リポジトリをStarを付けたこと</li>
+                    <li>リポジトリをフォークしたこと</li>
+                </ul>
+                詳しいくこちらへ： <a
+                    href="https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-contribution-graphs-on-your-profile/why-are-my-contributions-not-showing-up-on-my-profile">here</a>
+                .
+            </span>
+        </div>
+        <div fxLayout="column" class="w-100">
+            <mat-divider></mat-divider>
+            <div class="mr-auto">
+                <h3>第１つ目</h3>
+            </div>
+            <span>
+                コードの変更がコミットをできた後、コミットを「Push」すべきです。
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/push_origin.jpg"
+                class="w-100" alt="">
+            <span>
+                <i>*注意:</i>
+                <span>
+                    もしコミットの中でミスが見つけたら、<strong>コミットを「Push」すること前に</strong>、ブランチの変更履歴でコミットを右クリックして、「Undo commit...」を選んで
+                    コミットを戻ることができます。
+                </span>
+                <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/undo_commit.jpg"
+                    class="w-100" alt="">
+            </span>
+        </div>
+        <div fxLayout="column" class="w-100">
+            <mat-divider></mat-divider>
+            <div class="mr-auto">
+                <h3>第2つ目</h3>
+            </div>
+            <span>
+                コミットを「Push」をした後、ギットハブデスクトップから<i>Create a Pull Request</i> が選択できます
+                <strong>あるいは</strong> リポジトリのサイトに
+                <i>Compare and Pull Request</i> もできます.
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/compare_and_pr.jpg"
+                class="w-100" alt="">
+        </div>
+        <div fxLayout="column" class="w-100">
+            <mat-divider></mat-divider>
+            <div class="mr-auto">
+                <h3>第3つ目</h3>
+            </div>
+            <span>
+                このままプルリクエストのまとめとメッセージを編集できます。プルリクエストのメッセージは空いてもできますがまとめは空いてるはいけません。
+                プルリクエストのまとめとメッセージに満足したら、<strong>Create Pull Request</strong>を押して、プルリクエストが完成です。
+                その後、上司と相談してできます。
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/create_pr.jpg"
+                class="w-100" alt="">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="center center" class="w-100">
+            <mat-divider></mat-divider>
+            <div class="me-auto">
+                <h3>まとめ</h3>
+                <span>
+                    このブログを読んでくれたありがとうございます。大学プロジェクトのギットハブに初めて使ってるメンバーに説明したいのでこの記事を書いた。
+                    よかったら他の記事を是非見てご覧ください。
+                </span>
+            </div>
+            <span>
+
+            </span>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start">
+            <mat-divider></mat-divider>
+            <h3>他のGithubに関する記事:</h3>
+            <ol>
+                <li *ngFor="let item of alterLinks">
+                    <span class="text-success cursor-pointer" (click)="navigatetToBlog(item)">{{ item.name }}</span>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>

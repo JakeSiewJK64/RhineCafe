@@ -17,7 +17,7 @@ export const blogJP: string = "記事";
 
 export const BlogDataJP: Blog[] = [
     {
-        name: "ギートハブ初心者に説明",
+        name: "ギツトハブ初心者に説明",
         routeUrl: "/jp/jp-github-tutorial",
         imgUrl: "https://www.zbw-mediatalk.eu/wp-content/uploads/2015/09/github-cover.jpg"
     },

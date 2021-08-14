@@ -99,12 +99,12 @@ export const SpokenLanguagesEN: SpokenLanguage[] = [
     },
     {
         name: "Malay",
-        level: 70,
+        level: 75,
         imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/MY.svg"
     },
     {
         name: "Cantonese",
-        level: 75,
+        level: 70,
         imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/HK.svg"
     },
 ]
@@ -127,12 +127,12 @@ export const SpokenLanguagesJP: SpokenLanguage[] = [
     },
     {
         name: "マレー語",
-        level: 70,
+        level: 75,
         imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/MY.svg"
     },
     {
         name: "広東語",
-        level: 75,
+        level: 70,
         imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/HK.svg"
     },
 ]
