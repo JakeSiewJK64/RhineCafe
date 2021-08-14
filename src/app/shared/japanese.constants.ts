@@ -23,7 +23,7 @@ export const BlogDataJP: Blog[] = [
     },
     {
         name: "プルリクエストについて",
-        routeUrl: "github-pr",
+        routeUrl: "/jp/jp-github-pr",
         imgUrl: "https://miro.medium.com/max/1334/0*TZOvqmRL5cUl69TC.png"
     },
     {

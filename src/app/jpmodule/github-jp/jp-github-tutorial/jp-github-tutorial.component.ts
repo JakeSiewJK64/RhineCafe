@@ -27,7 +27,9 @@ export class JpGithubTutorialComponent implements OnInit {
   }
 
   checkEnglish() {
-    if (!this.isEn && this.router.url.includes('github-tutorial')) this.router.navigate(['github-tutorial']);
+    if (!this.isEn && this.router.url.includes('github-tutorial')) {
+      this.router.navigate(['github-tutorial']);
+    }
   }
 
   navigateToGithubPR() {
