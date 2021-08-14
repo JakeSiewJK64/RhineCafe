@@ -53,7 +53,12 @@ export const BlogDataEN: Blog[] = [
         name: "Github Pull Requests",
         routeUrl: "github-pr",
         imgUrl: "https://miro.medium.com/max/1334/0*TZOvqmRL5cUl69TC.png"
-    }
+    },
+    {
+        name: "Github Cherry Picking",
+        routeUrl: "github-cherry",
+        imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/cherry-picking.jpg"
+    },
 ]
 
 export const SpokenLanguagesEN: SpokenLanguage[] = [

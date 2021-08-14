@@ -1,1 +1,40 @@
-<p>github-cherry works!</p>
+<div fxLayoutAlign="center center" fxLayout="column" class="w-100 mb-5">
+    <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/cherry-picking.jpg"
+        class="w-50" alt="">
+    <div fxLayout="column" fxLayoutAlign="start start" class="w-50 mb-3 intro-section">
+        <span>Written By: JakeSiewJK64</span>
+        <span>Date: 13 August 2021</span>
+    </div>
+    <h2>Cherry Picking with Github Desktop</h2>
+    <div class="w-50">
+        <div>
+            <span>
+                Cherry Picking is a way for developers to "pick" a commit from a branch and transfer it to another
+                branch. This is useful if a branch contains too
+                many mistakes or there is a significant change which might jeopardise the current code base and needed
+                to be transferred to a branch where the code is safe to use. In this blog, we will discuss how we can do
+                that
+                using Github Desktop. 👌
+            </span>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="center center">
+            <mat-divider></mat-divider>
+            <h3>Step 1</h3>
+            <span>Navigate to the repository's site and copy the URL. The URL can be found under the
+                <strong>Code</strong> button</span>.
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/repo_site.jpg"
+                class="w-100" alt="">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="center center">
+            <mat-divider></mat-divider>
+            <h3>Conclusion</h3>
+            <span>
+                You are all set! If you made it this far, the rest of the project should be fine, hopefully. Just beware
+                of merge conflicts. To avoid this, please consult
+                with you advisor or group leader. To proceed, you might want to check out
+                <span (click)="navigateToGithubPR()" class="text-success cursor-pointer">How to Create a Pull
+                    Request</span>.
+            </span>
+        </div>
+    </div>
+</div>
