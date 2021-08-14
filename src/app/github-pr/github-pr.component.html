@@ -79,5 +79,14 @@
                 use it effectively. Happy Hacking!
             </span>
         </div>
+        <div fxLayout="column" fxLayoutAlign="start start">
+            <mat-divider></mat-divider>
+            <h3>Other related blogs:</h3>
+            <ol>
+                <li *ngFor="let item of alterLinks">
+                    <span class="text-success cursor-pointer" (click)="navigatetToBlog(item)">{{ item.name }}</span>
+                </li>
+            </ol>
+        </div>
     </div>
 </div>

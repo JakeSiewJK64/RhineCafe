@@ -17,7 +17,7 @@
                 demonstrate how version controlling with Github Desktop can be done! 👍
             </span>
         </div>
-        <div fxLayout="column" fxLayoutAlign="center center">
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
             <mat-divider></mat-divider>
             <h3>Step 1</h3>
             <span>Navigate to the repository's site and copy the URL. The URL can be found under the
@@ -25,7 +25,7 @@
             <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/repo_site.jpg"
                 class="w-100" alt="">
         </div>
-        <div fxLayout="column" fxLayoutAlign="center center">
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
             <mat-divider></mat-divider>
             <h3>Step 2</h3>
             <span>Navigate to Github Desktop, from there you can head over to the <i>File</i> tab and select <i>Clone
@@ -34,7 +34,7 @@
             <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/clone_repo.jpg"
                 class="w-100" alt="">
         </div>
-        <div fxLayout="column" fxLayoutAlign="center center">
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
             <mat-divider></mat-divider>
             <h3>Step 3</h3>
             <span>
@@ -47,7 +47,7 @@
             <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/clone_repo_setup.jpg"
                 class="w-100" alt="">
         </div>
-        <div fxLayout="column" fxLayoutAlign="center center">
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
             <mat-divider></mat-divider>
             <h3>Step 4</h3>
             <span>
@@ -60,7 +60,7 @@
             <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/create_branch.jpg"
                 class="w-100" alt="">
         </div>
-        <div fxLayout="column" fxLayoutAlign="center center">
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
             <mat-divider></mat-divider>
             <h3>Step 5</h3>
             <span>
@@ -71,7 +71,7 @@
             <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/create_branch_options.jpg"
                 class="w-100" alt="">
         </div>
-        <div fxLayout="column" fxLayoutAlign="center center">
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
             <mat-divider></mat-divider>
             <h3>Step 6</h3>
             <span>
@@ -81,7 +81,7 @@
             <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/comitting_changes.jpg"
                 class="w-100" alt="">
         </div>
-        <div fxLayout="column" fxLayoutAlign="center center">
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
             <mat-divider></mat-divider>
             <h3>Conclusion</h3>
             <span>
@@ -90,6 +90,15 @@
                 with you advisor or group leader. To proceed, you might want to check out 
                 <span (click)="navigateToGithubPR()" class="text-success cursor-pointer">How to Create a Pull Request</span>.
             </span>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>Other related blogs:</h3>
+            <ol>
+                <li *ngFor="let item of alterLinks">
+                    <span class="text-success cursor-pointer" (click)="navigatetToBlog(item)">{{ item.name }}</span>
+                </li>
+            </ol>
         </div>
     </div>
 </div>
