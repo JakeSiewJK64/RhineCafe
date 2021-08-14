@@ -17,17 +17,17 @@ export const blogJP: string = "記事";
 
 export const BlogDataJP: Blog[] = [
     {
-        name: "ギツトハブ初心者に説明",
+        name: "🎄ギツトハブ初心者に説明",
         routeUrl: "/jp/jp-github-tutorial",
         imgUrl: "https://www.zbw-mediatalk.eu/wp-content/uploads/2015/09/github-cover.jpg"
     },
     {
-        name: "プルリクエストについて",
+        name: "🎁プルリクエストについて",
         routeUrl: "/jp/jp-github-pr",
         imgUrl: "https://miro.medium.com/max/1334/0*TZOvqmRL5cUl69TC.png"
     },
     {
-        name: "チェリー ピックって何？",
+        name: "🍒チェリー ピックって何？",
         routeUrl: "/jp/jp-github-cherry",
         imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/cherry-picking.jpg"
     },
