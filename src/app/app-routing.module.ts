@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BiographyComponent } from './biography/biography.component';
-import { GithubCherryComponent } from './github-cherry/github-cherry.component';
-import { GithubPrComponent } from './github-pr/github-pr.component';
-import { GithubTutorialComponent } from './github-tutorial/github-tutorial.component';
+import { GithubCherryComponent } from './github-blog/github-cherry/github-cherry.component';
+import { GithubPrComponent } from './github-blog/github-pr/github-pr.component';
+import { GithubTutorialComponent } from './github-blog/github-tutorial/github-tutorial.component';
 
 const routes: Routes = [
   {
