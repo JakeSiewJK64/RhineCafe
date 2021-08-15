@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlterBlogInterest, AlterBlogLinks, Blog, DisplayLanguage } from 'src/app/shared/english.constants';
+import { Blog, DisplayLanguage } from 'src/app/shared/english.constants';
 import { BlogDataJP } from 'src/app/shared/japanese.constants';
 import { EventEmitterService } from 'src/app/shared/services/event-emitter.service';
 

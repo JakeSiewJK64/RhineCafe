@@ -30,11 +30,6 @@ export interface Blog {
     imgUrl: string
 }
 
-export interface AlterBlogLinks {
-    name: string,
-    url: string
-}
-
 export const BioDescriptionEN: string = "Hi! My name is Jake Siew Joe Kane, an avid full stack web developer. I also have an interest in Machine Learning and AI related fields and plan on building my own virtual assistant one day like JARVIS. I hope to journey into this endeavor with you."
 export const DownloadResumeEN: string = "Download Resume";
 export const ResumeUrl: string = "https://github.com/JakeSiewJK64/ImageWarehouse/raw/main/Employment/JoeKane_Resume.pdf";
@@ -50,34 +45,24 @@ export const blogEN: string = "Blog";
 
 export const BlogDataEN: Blog[] = [
     {
-        name: "Github Tutorial",
+        name: "🎄 Github Tutorial",
         routeUrl: "github-tutorial",
         imgUrl: "https://www.zbw-mediatalk.eu/wp-content/uploads/2015/09/github-cover.jpg"
     },
     {
-        name: "Github Pull Requests",
+        name: "🎁 Github Pull Requests",
         routeUrl: "github-pr",
         imgUrl: "https://miro.medium.com/max/1334/0*TZOvqmRL5cUl69TC.png"
     },
     {
-        name: "Github Cherry Picking",
+        name: "🍒 Github Cherry Picking",
         routeUrl: "github-cherry",
         imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/cherry-picking.jpg"
     },
-]
-
-export const AlterBlogInterest: AlterBlogLinks[] = [
-    {  
-        name: "🎄 Cloning a Repository and Creating a Branch",
-        url: "github-tutorial"
-    },
-    {  
-        name: "🎁 How to Create A PR",
-        url: "github-pr"
-    },
-    {  
-        name: "🍒 Github Cherry Picking",
-        url: "github-cherry"
+    {
+        name: "🍃 Private Repositories and Collaborations",
+        routeUrl: "github-private-collaborate",
+        imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/collaborate.jpg"
     },
 ]
 

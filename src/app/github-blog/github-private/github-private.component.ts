@@ -4,11 +4,11 @@ import { DisplayLanguage, Blog, BlogDataEN } from 'src/app/shared/english.consta
 import { EventEmitterService } from 'src/app/shared/services/event-emitter.service';
 
 @Component({
-  selector: 'app-github-cherry',
-  templateUrl: './github-cherry.component.html',
-  styleUrls: ['./github-cherry.component.scss']
+  selector: 'app-github-private',
+  templateUrl: './github-private.component.html',
+  styleUrls: ['./github-private.component.scss']
 })
-export class GithubCherryComponent implements OnInit {
+export class GithubPrivateComponent implements OnInit {
 
   constructor(private router: Router,
     private eventEmitter: EventEmitterService) { }
@@ -24,19 +24,16 @@ export class GithubCherryComponent implements OnInit {
   load() {
     window.scrollTo(0, 0);
     this.isEn = localStorage.getItem(DisplayLanguage) === 'en';
-    this.alterLinks = BlogDataEN.filter(x => !x.routeUrl.includes("github-cherry"));
+    this.alterLinks = BlogDataEN.filter(x => !x.routeUrl.includes("github-pr"));
     this.checkJapanese();
   }
 
   checkJapanese() {
-    if (this.isEn && this.router.url.includes('github-cherry')) this.router.navigate(['jp/jp-github-cherry']);
-  }
-
-  navigateToGithubPR() {
-    this.router.navigate(['github-cherry']);
+    if (this.isEn && this.router.url.includes('github-pr')) this.router.navigate(['jp/jp-github-pr']);
   }
 
   navigatetToBlog(blog: Blog) {
     this.router.navigate([blog.routeUrl]);
   }
+
 }

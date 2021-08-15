@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BiographyComponent } from './biography/biography.component';
 import { GithubCherryComponent } from './github-blog/github-cherry/github-cherry.component';
 import { GithubPrComponent } from './github-blog/github-pr/github-pr.component';
+import { GithubPrivateComponent } from './github-blog/github-private/github-private.component';
 import { GithubTutorialComponent } from './github-blog/github-tutorial/github-tutorial.component';
 
 const routes: Routes = [
@@ -24,6 +25,11 @@ const routes: Routes = [
   {
     path: "github-cherry",
     component: GithubCherryComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: "github-private-collaborate",
+    component: GithubPrivateComponent,
     pathMatch: 'full'
   },
   {

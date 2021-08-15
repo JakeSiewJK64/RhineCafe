@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlterBlogInterest, AlterBlogLinks, DisplayLanguage } from '../shared/english.constants';
-import { EventEmitterService } from '../shared/services/event-emitter.service';
+import { Blog, BlogDataEN, DisplayLanguage } from 'src/app/shared/english.constants';
+import { EventEmitterService } from 'src/app/shared/services/event-emitter.service';
 
 @Component({
   selector: 'app-github-tutorial',
@@ -13,7 +13,7 @@ export class GithubTutorialComponent implements OnInit {
   constructor(private router: Router,
     private eventEmitter: EventEmitterService) { }
 
-  alterLinks: AlterBlogLinks[] = [];
+  alterLinks: Blog[] = [];
   isEn: boolean = localStorage.getItem(DisplayLanguage) === 'jp';
 
   ngOnInit(): void {
@@ -24,7 +24,7 @@ export class GithubTutorialComponent implements OnInit {
   load() {
     window.scrollTo(0, 0);
     this.isEn = localStorage.getItem(DisplayLanguage) === 'en';
-    this.alterLinks = AlterBlogInterest.filter(x => !x.url.includes("github-tutorial"));
+    this.alterLinks = BlogDataEN.filter(x => !x.routeUrl.includes("github-tutorial"));
     this.checkJapanese();
   }
 
@@ -36,8 +36,8 @@ export class GithubTutorialComponent implements OnInit {
     this.router.navigate(['github-pr']);
   }
 
-  navigatetToBlog(blog: AlterBlogLinks) {
-    this.router.navigate([blog.url]);
+  navigatetToBlog(blog: Blog) {
+    this.router.navigate([blog.routeUrl]);
   }
 
 }

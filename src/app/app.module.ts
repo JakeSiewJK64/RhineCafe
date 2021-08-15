@@ -11,6 +11,7 @@ import { ScrollToTopComponent } from './shared/components/scroll-to-top/scroll-t
 import { GithubTutorialComponent } from './github-blog/github-tutorial/github-tutorial.component';
 import { GithubPrComponent } from './github-blog/github-pr/github-pr.component';
 import { GithubCherryComponent } from './github-blog/github-cherry/github-cherry.component';
+import { GithubPrivateComponent } from './github-blog/github-private/github-private.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { GithubCherryComponent } from './github-blog/github-cherry/github-cherry
     GithubTutorialComponent,
     GithubPrComponent,
     GithubCherryComponent,
+    GithubPrivateComponent,
   ],
   imports: [
     BrowserModule,
