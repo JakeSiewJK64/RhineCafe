@@ -255,6 +255,6 @@ export const experiences: Experience[] = [
 export const AlterLinkEN: AlterLink[] = [
     { name: "About", routeUrl: "/about" },
     { name: "Experience", routeUrl: "/experience" },
-    { name: "Projects", routeUrl: "/about" },
-    { name: "Education", routeUrl: "/about" },
+    { name: "Projects", routeUrl: "/projects" },
+    { name: "Education", routeUrl: "/education" },
 ];

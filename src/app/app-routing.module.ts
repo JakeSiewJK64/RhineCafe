@@ -6,7 +6,9 @@ import { GithubCherryComponent } from './github-blog/github-cherry/github-cherry
 import { GithubPrComponent } from './github-blog/github-pr/github-pr.component';
 import { GithubPrivateComponent } from './github-blog/github-private/github-private.component';
 import { GithubTutorialComponent } from './github-blog/github-tutorial/github-tutorial.component';
+import { PersonalEducationComponent } from './personal-education/personal-education.component';
 import { PersonalExperienceComponent } from './personal-experience/personal-experience.component';
+import { PersonalProjectsComponent } from './personal-projects/personal-projects.component';
 
 const routes: Routes = [
   {
@@ -22,6 +24,16 @@ const routes: Routes = [
   {
     path: "experience",
     component: PersonalExperienceComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: "projects",
+    component: PersonalProjectsComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: "education",
+    component: PersonalEducationComponent,
     pathMatch: 'full'
   },
   {
