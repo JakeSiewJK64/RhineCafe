@@ -34,7 +34,7 @@ export const BlogDataJP: Blog[] = [
     {
         name: "🍃プライベートリポジトリとコラボ",
         routeUrl: "/jp/jp-github-private-repo",
-        imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/cherry-picking.jpg"
+        imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/collaborate.jpg"
     },
 ]
 
