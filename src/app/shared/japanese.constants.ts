@@ -31,5 +31,10 @@ export const BlogDataJP: Blog[] = [
         routeUrl: "/jp/jp-github-cherry",
         imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/cherry-picking.jpg"
     },
+    {
+        name: "🍃プライベートリポジトリとコラボ",
+        routeUrl: "/jp/jp-github-private-repo",
+        imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/cherry-picking.jpg"
+    },
 ]
 

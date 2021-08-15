@@ -24,12 +24,12 @@ export class GithubPrivateComponent implements OnInit {
   load() {
     window.scrollTo(0, 0);
     this.isEn = localStorage.getItem(DisplayLanguage) === 'en';
-    this.alterLinks = BlogDataEN.filter(x => !(x.routeUrl === "github-private"));
+    this.alterLinks = BlogDataEN.filter(x => !(x.routeUrl === "github-private-collaborate"));
     this.checkJapanese();
   }
 
   checkJapanese() {
-    if (this.isEn && this.router.url === '/github-private') this.router.navigate(['jp/jp-github-private']);
+    if (this.isEn && this.router.url === '/github-private-collaborate') this.router.navigate(['/jp/jp-github-private-repo']);
   }
 
   navigatetToBlog(blog: Blog) {
