@@ -24,12 +24,12 @@ export class GithubCherryComponent implements OnInit {
   load() {
     window.scrollTo(0, 0);
     this.isEn = localStorage.getItem(DisplayLanguage) === 'en';
-    this.alterLinks = BlogDataEN.filter(x => !x.routeUrl.includes("github-cherry"));
+    this.alterLinks = BlogDataEN.filter(x => !(x.routeUrl === "github-cherry"));
     this.checkJapanese();
   }
 
   checkJapanese() {
-    if (this.isEn && this.router.url.includes('github-cherry')) this.router.navigate(['jp/jp-github-cherry']);
+    if (this.isEn && this.router.url === '/github-cherry') this.router.navigate(['jp/jp-github-cherry']);
   }
 
   navigateToGithubPR() {

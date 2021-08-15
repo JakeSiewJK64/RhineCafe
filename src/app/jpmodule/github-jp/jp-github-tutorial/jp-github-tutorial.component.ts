@@ -23,12 +23,12 @@ export class JpGithubTutorialComponent implements OnInit {
   load() {
     window.scrollTo(0, 0);
     this.isEn = localStorage.getItem(DisplayLanguage) === 'en';
-    this.alterLinks = BlogDataJP.filter(x => !x.routeUrl.includes("github-tutorial"));
+    this.alterLinks = BlogDataJP.filter(x => !(x.routeUrl === "github-tutorial"));
     this.checkEnglish();
   }
 
   checkEnglish() {
-    if (!this.isEn && this.router.url.includes('github-tutorial')) {
+    if (!this.isEn && this.router.url === '/jp/jp-github-tutorial') {
       this.router.navigate(['github-tutorial']);
     }
   }

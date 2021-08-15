@@ -24,12 +24,12 @@ export class JpGithubPrComponent implements OnInit {
   load() {
     window.scrollTo(0, 0);
     this.isEn = localStorage.getItem(DisplayLanguage) === 'en';
-    this.alterLinks = BlogDataJP.filter(x => !x.routeUrl.includes("github-pr"));
+    this.alterLinks = BlogDataJP.filter(x => !(x.routeUrl === "github-pr"));
     this.checkEnglish();
   }
 
   checkEnglish() {
-    if (!this.isEn && this.router.url.includes('github-pr')) {
+    if (!this.isEn && this.router.url === '/jp/jp-github-pr') {
       this.router.navigate(['github-pr']);
     }
   }
