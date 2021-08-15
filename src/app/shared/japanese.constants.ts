@@ -1,7 +1,6 @@
-import { Blog } from "./english.constants";
+import { AlterLink, Blog } from "./english.constants";
 
 export const RhineCafeJP = "ラインカフェー";
-export const AlterLinkJP: string[] = ["自己紹介", "経験", "プロジェクト", "教育"];
 export const UsernameJP: string = "萧楚劼（そかつ）";
 export const DownloadResumeJP: string = "履歴書をダウンロード";
 export const BioDescriptionJP: string = `初めまして、萧楚劼（そかつ）とおもします。僕はソフトウェアエンジニアとなりたい夢を持っています。 特にAIと機器学習の技術もっと知りたいのです。その夢を叶うために一緒に一生懸命頑張りましょう。`
@@ -38,3 +37,9 @@ export const BlogDataJP: Blog[] = [
     },
 ]
 
+export const AlterLinkJP: AlterLink[] = [
+    { name: "自己紹介", routeUrl: "/about" },
+    { name: "経験", routeUrl: "/about" },
+    { name: "プロジェクト", routeUrl: "/about" },
+    { name: "教育", routeUrl: "/about" },
+]

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutPageComponent } from './about-page/about-page.component';
 import { BiographyComponent } from './biography/biography.component';
 import { GithubCherryComponent } from './github-blog/github-cherry/github-cherry.component';
 import { GithubPrComponent } from './github-blog/github-pr/github-pr.component';
@@ -10,6 +11,11 @@ const routes: Routes = [
   {
     path: "",
     component: BiographyComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: "about",
+    component: AboutPageComponent,
     pathMatch: 'full'
   },
   {

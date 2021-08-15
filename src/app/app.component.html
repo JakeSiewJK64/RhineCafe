@@ -9,13 +9,15 @@
   </div>
   <button mat-stroked-button (click)="switchLanguage()">{{ isEN ? 'JP' : 'EN'  }}</button>
   <div fxLayoutAlign="end end" fxHide.xs fxShow.md>
-    <button mat-flat-button *ngFor="let item of alter_links">{{ item }}</button>
+    <button mat-flat-button *ngFor="let item of alter_links" (click)="navigateToRoute(item)">{{ item.name }}</button>
   </div>
   <div fxShow.xs fxHide.md fxHide [matMenuTriggerFor]="alter_link" mat-button class="cursor-pointer">
     <mat-icon>more_vert</mat-icon>
   </div>
   <mat-menu #alter_link="matMenu">
-    <button mat-menu-item *ngFor="let item of alter_links">{{ item }}</button>
+    <section *ngFor="let item of alter_links">
+      <button mat-menu-item (click)="navigateToRoute(item)">{{ item.name }}</button>
+    </section>
   </mat-menu>
 </mat-toolbar>
 <router-outlet></router-outlet>

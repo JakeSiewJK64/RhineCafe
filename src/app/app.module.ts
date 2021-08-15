@@ -12,6 +12,7 @@ import { GithubTutorialComponent } from './github-blog/github-tutorial/github-tu
 import { GithubPrComponent } from './github-blog/github-pr/github-pr.component';
 import { GithubCherryComponent } from './github-blog/github-cherry/github-cherry.component';
 import { GithubPrivateComponent } from './github-blog/github-private/github-private.component';
+import { AboutPageComponent } from './about-page/about-page.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { GithubPrivateComponent } from './github-blog/github-private/github-priv
     GithubPrComponent,
     GithubCherryComponent,
     GithubPrivateComponent,
+    AboutPageComponent,
   ],
   imports: [
     BrowserModule,

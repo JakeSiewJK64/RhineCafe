@@ -1,7 +1,7 @@
 export const RhineCafeEN: string = "Rhine Cafe";
-export const AlterLinkEN: string[] = ["About", "Experience", "Projects", "Education"];
 export const DisplayLanguage: string = "DisplayLanguage";
 export const UsernameEN: string = "Jake Siew Joe Kane";
+
 export interface Experience {
     name: string,
     duration: string,
@@ -28,6 +28,11 @@ export interface Blog {
     name: string,
     routeUrl: string,
     imgUrl: string
+}
+
+export interface AlterLink {
+    name: string,
+    routeUrl: string,
 }
 
 export const BioDescriptionEN: string = "Hi! My name is Jake Siew Joe Kane, an avid full stack web developer. I also have an interest in Machine Learning and AI related fields and plan on building my own virtual assistant one day like JARVIS. I hope to journey into this endeavor with you."
@@ -246,3 +251,10 @@ export const experiences: Experience[] = [
         ]
     },
 ]
+
+export const AlterLinkEN: AlterLink[] = [
+    { name: "About", routeUrl: "/about" },
+    { name: "Experience", routeUrl: "/about" },
+    { name: "Projects", routeUrl: "/about" },
+    { name: "Education", routeUrl: "/about" },
+];
