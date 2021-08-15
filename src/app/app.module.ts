@@ -13,6 +13,9 @@ import { GithubPrComponent } from './github-blog/github-pr/github-pr.component';
 import { GithubCherryComponent } from './github-blog/github-cherry/github-cherry.component';
 import { GithubPrivateComponent } from './github-blog/github-private/github-private.component';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { PersonalExperienceComponent } from './personal-experience/personal-experience.component';
+import { PersonalProjectsComponent } from './personal-projects/personal-projects.component';
+import { PersonalEducationComponent } from './personal-education/personal-education.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,9 @@ import { AboutPageComponent } from './about-page/about-page.component';
     GithubCherryComponent,
     GithubPrivateComponent,
     AboutPageComponent,
+    PersonalExperienceComponent,
+    PersonalProjectsComponent,
+    PersonalEducationComponent,
   ],
   imports: [
     BrowserModule,
