@@ -69,20 +69,20 @@
   </div>
   <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="5px" class="m-4 tools-n-frameworks" fxHide.md
     fxHide.lg fxHide.xl fxHide.gt-sm>
-    <mat-card class="mat-elevation-z5 mt-3">
+    <mat-card class="w-100 mat-elevation-z5 mt-3">
       <mat-card-title>{{ displayframework }}</mat-card-title>
-      <mat-card-content>
-        <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
+      <mat-card-content class="w-100">
+        <div fxLayout="row wrap" fxLayoutGap="5px" fxLayoutAlign="center center">
           <div *ngFor="let framework of frameworks" class="social-tab">
             <img draggable="false" [src]="framework.imgUrl" alt="">
           </div>
         </div>
       </mat-card-content>
     </mat-card>
-    <mat-card class="mat-elevation-z5 mt-3">
+    <mat-card class="mat-elevation-z5 mt-3 w-100">
       <mat-card-title>{{ displaytools }}</mat-card-title>
-      <mat-card-content>
-        <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
+      <mat-card-content class="w-100">
+        <div fxLayout="row wrap" fxLayoutGap="5px" fxLayoutAlign="center center">
           <div *ngFor="let tool of tools" class="social-tab">
             <img draggable="false" [src]="tool.imgUrl" alt="">
           </div>
@@ -109,9 +109,9 @@
     <!-- show mobile mode -->
     <div fxLayout="column wrap" fxLayoutGap="20px" fxLayoutAlign="center center" fxHide.md fxHide.lg fxHide.xl
       fxHide.gt-sm>
-      <mat-card class="mat-elevation-z5" *ngFor="let education of educations">
-        <mat-card-content>
-          <div fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="center center">
+      <mat-card class="mat-elevation-z5 w-100" *ngFor="let education of educations">
+        <mat-card-content class="w-100">
+          <div fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="center center" class="text-center">
             <img draggable="false" [src]="education.imgUrl" alt="INTI" [width]="education.displayWidth">
             <h4>{{ education.name }}</h4>
             <span>{{ education.programme }}</span>
@@ -203,9 +203,9 @@
     </div>
     <div fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center" class="w-75" fxHide.md fxHide.lg fxHide.xl
       fxHide.hide-sm fxHide.gt-sm fxShow.sm>
-      <mat-card *ngFor="let blog of displayBlogData" class="mat-elevation-z5 m-3" fxLayout="column">
+      <mat-card *ngFor="let blog of displayBlogData" class="mat-elevation-z5 m-3 w-100" fxLayout="column">
         <mat-card-content fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="center center">
-          <img draggable="false" [src]="blog.imgUrl" width="235">
+          <img draggable="false" [src]="blog.imgUrl" class="w-100">
           <div fxLayout="column">
             <div fxLayout="row">
               <strong>{{ blog.name }}</strong>
