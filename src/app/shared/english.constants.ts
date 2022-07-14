@@ -177,14 +177,14 @@ export const ProgrammingKnowledge: ProgrammingLanguage[] = [
 ]
 
 export const social_buttons: any = [
-    { imgUrl: "https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg", link: "https://www.linkedin.com/in/jake-siew-joe-kane-a411811b5/" },
-    { imgUrl: "https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/facebook.svg", link: "https://www.facebook.com/DataScienceexe-101972195168927" },
+    { imgUrl: "../assets/img/linkedin.svg", link: "https://www.linkedin.com/in/jake-siew-joe-kane-a411811b5/" },
+    { imgUrl: "../assets/img/facebook.png", link: "https://www.facebook.com/DataScienceexe-101972195168927" },
 ]
 
 export const educations: any = [
-    { name: "Swinburne University of Technology", programme: "Bachelor of Computer Science (BCSSUT)", duration: 2, imgUrl: "https://www.swinburne.edu.au/content/dam/media/brand/logo-long-full.svg", displayWidth: "170" },
-    { name: "INTI International College Subang", programme: "Diploma in Information Technology (DITN)", duration: 2, imgUrl: "https://studymasters.my/wp-content/uploads/2017/07/INTI-International-University-College.png", displayWidth: "330" },
-    { name: "Campus Rangers", programme: "IGCSE", duration: 2, imgUrl: "https://www.campusrangers.edu.my/wp-content/uploads/2020/10/Logo.png", displayWidth: "330" },
+    { name: "Swinburne University of Technology", programme: "Bachelor of Computer Science (BCSSUT)", duration: 2, imgUrl: "../assets/img/swinburne.svg", displayWidth: "170" },
+    { name: "INTI International College Subang", programme: "Diploma in Information Technology (DITN)", duration: 2, imgUrl: "../assets/img/INTI_Logo.png", displayWidth: "330" },
+    { name: "Campus Rangers", programme: "IGCSE", duration: 2, imgUrl: "../assets/img/campus.png", displayWidth: "330" },
 ]
 
 export const tools = [
