@@ -1,0 +1,64 @@
+<div fxLayoutAlign="center center" fxLayout="column" class="w-100 mb-5">
+    <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/cherry-picking.jpg"
+        class="w-50" alt="">
+    <div fxLayout="column" fxLayoutAlign="start start" class="w-50 mb-3 intro-section">
+        <span>Written By: JakeSiewJK64</span>
+        <span>Date: 13 August 2021</span>
+    </div>
+    <div class="w-50">
+        <h2>Cherry Picking with Github Desktop</h2>
+        <div>
+            <span>
+                Cherry Picking is a way for developers to "pick" a commit from a branch and transfer it to another
+                branch. This is useful if a branch contains too
+                many mistakes or there is a significant change which might jeopardise the current code base and needed
+                to be transferred to a branch where the code is safe to use. In this blog, we will discuss how we can do
+                that
+                using Github Desktop. 👌
+            </span>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>Step 1</h3>
+            Go to your Branch History > Right Click > Select Cherry Pick Commit. Like this:
+            <img class="me-auto ms-auto" src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/cherry_pick.jpg"
+                alt="Cherry Pick Right Click">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>Step 2</h3>
+            A window will prompt asking you to Select a Branch to cherry pick (transfer) the selected commit to.
+            <img class="me-auto ms-auto" src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/select_branch_to_cherry_pick.jpg"
+                alt="Cherry Pick Branch Select">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <div class="me-auto">
+                <i>*Take Note:</i>
+            </div>
+            Should you have any existing changes in your current branch, you can stash your changes and come back to it
+            later. Don't worry, they are not deleted.
+            <img class="me-auto ms-auto" src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/stash_changes.jpg"
+                alt="Stash Changes">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>Conclusion</h3>
+            <span>
+                That's all for Cherry Commits! Hope you found the blog useful. The Github Blog series is a way to teach
+                first time users of Github Desktop users to developers and mini group projects in college. Cherry
+                Commits is especially useful if a
+                branch is having several merge conflicts, too many commit reverts, or just unrunnable code in general.
+                Thank you for reading! ❤❤❤
+            </span>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start" class="w-100">
+            <mat-divider></mat-divider>
+            <h3>Other related blogs:</h3>
+            <ol>
+                <li *ngFor="let item of alterLinks">
+                    <span class="text-success cursor-pointer" (click)="navigatetToBlog(item)">{{ item.name }}</span>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>

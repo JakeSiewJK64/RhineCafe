@@ -28,8 +28,13 @@ body {
   background: #555;
 }
 
-.vertical-line {
+.vertical-line-black {
   border-left: 2px solid black;
+  height: 25px;
+}
+
+.vertical-line-white {
+  border-left: 2px solid white;
   height: 25px;
 }
 

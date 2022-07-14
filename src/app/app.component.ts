@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { AlterLinkEN, DisplayLanguage, RhineCafeEN } from './shared/english.constants';
+import { Router } from '@angular/router';
+import { AlterLink, AlterLinkEN, DisplayLanguage, RhineCafeEN } from './shared/english.constants';
 import { AlterLinkJP, RhineCafeJP } from './shared/japanese.constants';
 import { EventEmitterService } from './shared/services/event-emitter.service';
 
@@ -10,15 +11,16 @@ import { EventEmitterService } from './shared/services/event-emitter.service';
 })
 export class AppComponent {
 
-  constructor(private eventEmitter: EventEmitterService) {
+  constructor(private eventEmitter: EventEmitterService,
+    private router: Router) {
     this.checkLanguage();
   }
-  
+
   currentLanguage: string = 'jp';
   isEN: boolean = true;
   title: string = this.isEN ? RhineCafeEN : RhineCafeJP;
   date: Date = new Date();
-  alter_links: any[] = this.isEN ? AlterLinkEN : AlterLinkJP;
+  alter_links: AlterLink[] = this.isEN ? AlterLinkEN : AlterLinkJP;
 
   checkLanguage() {
     if (localStorage.getItem("DisplayLanguage") === "jp") {
@@ -31,6 +33,10 @@ export class AppComponent {
   load() {
     this.title = this.isEN ? RhineCafeEN : RhineCafeJP;
     this.alter_links = this.isEN ? AlterLinkEN : AlterLinkJP;
+  }
+
+  navigateToRoute(item: any) {
+    this.router.navigate([item.routeUrl]);
   }
 
   switchLanguage() {

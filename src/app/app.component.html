@@ -1,7 +1,7 @@
 <mat-toolbar>
   <div fxLayout="row" class="w-100">
     <div class="cursor-pointer" [routerLink]="['/']" fxLayout="row">
-      <img src="https://pbs.twimg.com/profile_images/924095154545336320/2aEQAjR4_400x400.jpg" alt="Penguin Logistics" />
+      <img src="../../../assets/img/icon.png" alt="Penguin Logistics" class="p-2"/>
       <span class="v1"></span>
       <span class="pt-3">{{ title }}</span>
     </div>
@@ -9,13 +9,15 @@
   </div>
   <button mat-stroked-button (click)="switchLanguage()">{{ isEN ? 'JP' : 'EN'  }}</button>
   <div fxLayoutAlign="end end" fxHide.xs fxShow.md>
-    <button mat-flat-button *ngFor="let item of alter_links">{{ item }}</button>
+    <button mat-flat-button *ngFor="let item of alter_links" (click)="navigateToRoute(item)">{{ item.name }}</button>
   </div>
   <div fxShow.xs fxHide.md fxHide [matMenuTriggerFor]="alter_link" mat-button class="cursor-pointer">
     <mat-icon>more_vert</mat-icon>
   </div>
   <mat-menu #alter_link="matMenu">
-    <button mat-menu-item *ngFor="let item of alter_links">{{ item }}</button>
+    <section *ngFor="let item of alter_links">
+      <button mat-menu-item (click)="navigateToRoute(item)">{{ item.name }}</button>
+    </section>
   </mat-menu>
 </mat-toolbar>
 <router-outlet></router-outlet>

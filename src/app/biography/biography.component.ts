@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TdDialogService } from '@covalent/core/dialogs';
 import { BioDescriptionEN, Blog, BlogDataEN, blogEN, ComputerLanguageEN, DisplayLanguage, DownloadResumeEN, durationEN, EducationEN, educations, ExperienceEN, experiences, FrameworkEN, frameworks, ProgrammingKnowledge, ProgrammingLanguage, ResumeUrl, seemoreEN, social_buttons, SpokenLanguage, SpokenLanguageEN, SpokenLanguagesEN, SpokenLanguagesJP, tools, ToolsEN, UsernameEN } from '../shared/english.constants';
-import { BioDescriptionJP, blogJP, ComputerLanguageJP, DownloadResumeJP, durationJP, EducationJP, ExperienceJP, FrameworksJP, seemoreJP, SpokenLanguageJP, ToolsJP, UsernameJP } from '../shared/japanese.constants';
+import { BioDescriptionJP, BlogDataJP, blogJP, ComputerLanguageJP, DownloadResumeJP, durationJP, EducationJP, ExperienceJP, FrameworksJP, seemoreJP, SpokenLanguageJP, ToolsJP, UsernameJP } from '../shared/japanese.constants';
 import { EventEmitterService } from '../shared/services/event-emitter.service';
 import { ExperienceDialogComponent } from './_dialogs/experience-dialog/experience-dialog.component';
 
@@ -15,8 +15,8 @@ export class BiographyComponent implements OnInit {
 
   constructor(private dialogService: TdDialogService,
     private router: Router,
-    private eventEmitterService: EventEmitterService) { 
-    }
+    private eventEmitterService: EventEmitterService) {
+  }
 
   description: string = BioDescriptionEN;
 
@@ -39,10 +39,11 @@ export class BiographyComponent implements OnInit {
   displayBlog: string = blogEN;
   programming_knowledge: ProgrammingLanguage[] = ProgrammingKnowledge.sort((x, y) => y.level - x.level);
   spoken_languages: SpokenLanguage[] = SpokenLanguagesEN.sort((x, y) => y.level - x.level);
-  blogENData: Blog[] = BlogDataEN;
+  displayBlogData: Blog[] = BlogDataEN;
 
   ngOnInit(): void {
     this.eventEmitterService.eventEmitter.subscribe(x => this.load());
+    this.load();
   }
 
   checkLanguage() {
@@ -59,10 +60,11 @@ export class BiographyComponent implements OnInit {
     this.displayeducation = !this.isEN ? EducationJP : EducationEN;
     this.displaycomputerlanguage = !this.isEN ? ComputerLanguageJP : ComputerLanguageEN;
     this.displayspokenlanguage = !this.isEN ? SpokenLanguageJP : SpokenLanguageEN;
-    this.displayexperience = !this.isEN ? ExperienceJP: ExperienceEN;
+    this.displayexperience = !this.isEN ? ExperienceJP : ExperienceEN;
     this.seemore = !this.isEN ? seemoreJP : seemoreEN;
     this.duration = !this.isEN ? durationJP : durationEN;
     this.displayBlog = !this.isEN ? blogJP : blogEN;
+    this.displayBlogData = !this.isEN ? BlogDataJP : BlogDataEN;
     this.spoken_languages = !this.isEN ? SpokenLanguagesJP.sort((x, y) => y.level - x.level) : SpokenLanguagesEN.sort((x, y) => y.level - x.level);
   }
 

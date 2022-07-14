@@ -1,7 +1,7 @@
 export const RhineCafeEN: string = "Rhine Cafe";
-export const AlterLinkEN: string[] = ["About", "Experience", "Projects", "Education"];
 export const DisplayLanguage: string = "DisplayLanguage";
 export const UsernameEN: string = "Jake Siew Joe Kane";
+
 export interface Experience {
     name: string,
     duration: string,
@@ -30,6 +30,11 @@ export interface Blog {
     imgUrl: string
 }
 
+export interface AlterLink {
+    name: string,
+    routeUrl: string,
+}
+
 export const BioDescriptionEN: string = "Hi! My name is Jake Siew Joe Kane, an avid full stack web developer. I also have an interest in Machine Learning and AI related fields and plan on building my own virtual assistant one day like JARVIS. I hope to journey into this endeavor with you."
 export const DownloadResumeEN: string = "Download Resume";
 export const ResumeUrl: string = "https://github.com/JakeSiewJK64/ImageWarehouse/raw/main/Employment/JoeKane_Resume.pdf";
@@ -45,15 +50,25 @@ export const blogEN: string = "Blog";
 
 export const BlogDataEN: Blog[] = [
     {
-        name: "Github Tutorial",
+        name: "🎄 Github Tutorial",
         routeUrl: "github-tutorial",
         imgUrl: "https://www.zbw-mediatalk.eu/wp-content/uploads/2015/09/github-cover.jpg"
     },
     {
-        name: "Github Pull Requests",
+        name: "🎁 Github Pull Requests",
         routeUrl: "github-pr",
         imgUrl: "https://miro.medium.com/max/1334/0*TZOvqmRL5cUl69TC.png"
-    }
+    },
+    {
+        name: "🍒 Github Cherry Picking",
+        routeUrl: "github-cherry",
+        imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/cherry-picking.jpg"
+    },
+    {
+        name: "🍃 Private Repositories and Collaborations",
+        routeUrl: "github-private-collaborate",
+        imgUrl: "https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/collaborate.jpg"
+    },
 ]
 
 export const SpokenLanguagesEN: SpokenLanguage[] = [
@@ -74,12 +89,12 @@ export const SpokenLanguagesEN: SpokenLanguage[] = [
     },
     {
         name: "Malay",
-        level: 70,
+        level: 75,
         imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/MY.svg"
     },
     {
         name: "Cantonese",
-        level: 75,
+        level: 70,
         imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/HK.svg"
     },
 ]
@@ -102,12 +117,12 @@ export const SpokenLanguagesJP: SpokenLanguage[] = [
     },
     {
         name: "マレー語",
-        level: 70,
+        level: 75,
         imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/MY.svg"
     },
     {
         name: "広東語",
-        level: 75,
+        level: 70,
         imgUrl: "https://raw.githubusercontent.com/catamphetamine/country-flag-icons/d9bdf1180eb5c50ad5ebd6514f19c84857ba55f6/3x2/HK.svg"
     },
 ]
@@ -162,14 +177,14 @@ export const ProgrammingKnowledge: ProgrammingLanguage[] = [
 ]
 
 export const social_buttons: any = [
-    { imgUrl: "https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg", link: "https://www.linkedin.com/in/jake-siew-joe-kane-a411811b5/" },
-    { imgUrl: "https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/facebook.svg", link: "https://www.facebook.com/DataScienceexe-101972195168927" },
+    { imgUrl: "../assets/img/linkedin.svg", link: "https://www.linkedin.com/in/jake-siew-joe-kane-a411811b5/" },
+    { imgUrl: "../assets/img/facebook.png", link: "https://www.facebook.com/DataScienceexe-101972195168927" },
 ]
 
 export const educations: any = [
-    { name: "Swinburne University of Technology", programme: "Bachelor of Computer Science (BCSSUT)", duration: 2, imgUrl: "https://www.swinburne.edu.au/content/dam/media/brand/logo-long-full.svg", displayWidth: "170" },
-    { name: "INTI International College Subang", programme: "Diploma in Information Technology (DITN)", duration: 2, imgUrl: "https://studymasters.my/wp-content/uploads/2017/07/INTI-International-University-College.png", displayWidth: "330" },
-    { name: "Campus Rangers", programme: "IGCSE", duration: 2, imgUrl: "https://www.campusrangers.edu.my/wp-content/uploads/2020/10/Logo.png", displayWidth: "330" },
+    { name: "Swinburne University of Technology", programme: "Bachelor of Computer Science (BCSSUT)", duration: 2, imgUrl: "../assets/img/swinburne.svg", displayWidth: "170" },
+    { name: "INTI International College Subang", programme: "Diploma in Information Technology (DITN)", duration: 2, imgUrl: "../assets/img/INTI_Logo.png", displayWidth: "330" },
+    { name: "Campus Rangers", programme: "IGCSE", duration: 2, imgUrl: "../assets/img/campus.png", displayWidth: "330" },
 ]
 
 export const tools = [
@@ -236,3 +251,10 @@ export const experiences: Experience[] = [
         ]
     },
 ]
+
+export const AlterLinkEN: AlterLink[] = [
+    { name: "About", routeUrl: "/about" },
+    { name: "Experience", routeUrl: "/experience" },
+    { name: "Projects", routeUrl: "/projects" },
+    { name: "Education", routeUrl: "/education" },
+];

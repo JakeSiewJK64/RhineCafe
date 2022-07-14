@@ -1,16 +1,25 @@
-mat-card img {
-    height: auto;
+.profile-division-background {
+    background-image: url("https://papers.co/wallpaper/papers.co-bb29-white-mountain-bubble-minimal-illustration-art-36-3840x2400-4k-wallpaper.jpg");
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 .blog-division mat-card{
     width: 26rem;
-    height: 15rem;
+    height: 16rem;
     transition: transform .5s;
+}
+
+.blog-division img{
+    width: 20rem;
+    height: 8rem;
 }
 
 .education-section mat-card {
     width: 26rem;
-    height: 200px;
+    height: 14rem;
     transition: transform 0.2s;
 }
 

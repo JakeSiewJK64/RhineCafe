@@ -1,0 +1,40 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+    <div class="card w-75 m-3" *ngFor="let experience of experienceData">
+        <div class="card-body">
+            <div fxLayout="row">
+                <div fxLayout="column" class="m-2">
+                    <div class="w-100 m-3" fxHide.md fxHide.lg fxHide.xl fxHide.hide-sm fxHide.gt-sm fxShow.sm>
+                        <img class="w-100" [src]="experience.imgUrl">
+                    </div>
+                    <h3>{{ experience.name }}</h3>
+                    <h5>{{ experience.position }}</h5>
+                    <h5>{{ experience.duration }}</h5>
+                    <h5>Version Control: {{ experience.version_control }}</h5>
+                    <mat-divider></mat-divider>
+                    <div class="m-3">
+                        <h5>Tools</h5>
+                        <mat-chip-list class="example-chip" cdkDropList cdkDropListOrientation="horizontal">
+                            <mat-chip class="example-box" cdkDrag *ngFor="let tool of experience.tools">
+                                {{ tool }}
+                            </mat-chip>
+                        </mat-chip-list>
+                    </div>
+                    <mat-divider></mat-divider>
+                    <div class="m-3">
+                        <h5>Languages</h5>
+                        <mat-chip-list class="example-chip" cdkDropList cdkDropListOrientation="horizontal">
+                            <mat-chip class="example-box" cdkDrag *ngFor="let language of experience.languages">
+                                {{ language }}
+                            </mat-chip>
+                        </mat-chip-list>
+                    </div>
+                    <mat-divider></mat-divider>
+                    <ol>
+                        <li *ngFor="let duty of experience.duties">{{ duty }}</li>
+                    </ol>
+                </div>
+                <img class="w-25 ms-auto h-50 my-auto" [src]="experience.imgUrl" fxHide.xs fxHide.sm>
+            </div>
+        </div>
+    </div>
+</div>

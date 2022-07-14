@@ -1,0 +1,48 @@
+$float_value: 10%;
+$animation_delay_desc: 1.4s;
+$animation_delay_img: 1s;
+
+
+.profile-charm {
+    width: 10rem !important;
+    overflow: hidden;
+    animation: float-right-to-left 1s;
+    transition: 5s;
+    animation-delay: $animation_delay_img;
+    animation-fill-mode: both;
+}
+
+.profile-charm img {
+    position: relative;
+    right: 17rem;
+    width: 50rem;
+}
+
+.profile-description {
+    width: 20rem !important;
+    overflow: hidden;
+    animation: float-left-to-right 1s;
+    transition: 5s;
+    animation-delay: $animation_delay_desc;
+    animation-fill-mode: both;
+}
+
+@keyframes float-right-to-left {
+    from {
+        opacity: 0%;
+        transform: translateX(0%);
+    } to {
+        opacity: 100%;
+        transform: translateX(-$float_value);
+    }
+}
+
+@keyframes float-left-to-right {
+    from {
+        opacity: 0%;
+        transform: translateX(-$float_value);
+    } to {
+        opacity: 100%;
+        transform: translateX(0%);
+    }
+}

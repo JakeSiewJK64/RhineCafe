@@ -1,0 +1,142 @@
+<div fxLayoutAlign="center center" fxLayout="column" class="w-100 mb-5">
+    <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/thumbnails/collaborate.jpg"
+        class="w-50" alt="">
+    <div fxLayout="column" fxLayoutAlign="start start" class="w-50 mb-3 intro-section">
+        <span>Written By: JakeSiewJK64</span>
+        <span>Date: 15 August 2021</span>
+    </div>
+    <div class="w-50">
+        <h2>How to collaborate in a private Github Repository</h2>
+        <div>
+            <span>
+                Github has the option for you to make your repository private so that it remains hidden from other
+                Github users. Attempting to enter the repository via URL will only result in a 404 request. However, in
+                this blog we will not cover how to make your repository private but how to make your Private Github
+                Repository visible to specific Github members and allow them to contribute
+                to the private repository.
+            </span>
+        </div>
+        <div fxLayout="column" class="w-100">
+            <mat-divider></mat-divider>
+            <div class="mr-auto">
+                <h3>Step 1</h3>
+            </div>
+            <span>
+                Go to your private repository settings page. Settings can be found on the navigation tab of your
+                repository. Like this:
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/repo_setitngs.jpg"
+                alt="">
+        </div>
+        <div fxLayout="column" class="w-100">
+            <mat-divider></mat-divider>
+            <div class="mr-auto">
+                <h3>Step 2</h3>
+            </div>
+            <span>
+                In the settings page, navigate to <i>Manage access</i>, from there you can click on "Invite a
+                collaborator".
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/invite_a_collaborator.jpg"
+                alt="">
+        </div>
+        <div fxLayout="column" class="w-100">
+            <mat-divider></mat-divider>
+            <div class="mr-auto">
+                <h3>Step 3</h3>
+            </div>
+            <span>
+                A window will prompt asking you to enter the collaborator's name. If the collaborator exists on Github
+                his/her name will show as a suggestion.
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/enter_collaborator_name.jpg"
+                alt="">
+        </div>
+        <div fxLayout="column" class="w-100">
+            <mat-divider></mat-divider>
+            <div class="mr-auto">
+                <h3>Step 4</h3>
+            </div>
+            <span>
+                If the process was followed correctly, a success message should appear indicating the collaborate has
+                been sent the request to collaborate.
+                Please note, that if the collaborator has not accepted the request via email he/she still does not have
+                the permission to view the repository.
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/success_message.jpg"
+                alt="">
+        </div>
+        <div fxLayout="column" class="w-100">
+            <h2>Collaborator's POV</h2>
+            <mat-divider></mat-divider>
+            <div class="mr-auto">
+                <h3>Step 5</h3>
+            </div>
+            <span>
+                As the collaborator, head over to your email associated with your Github account. There should be an
+                invitation to collaborate with the private repository. Click on <i>View Invitation</i>
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/email_accept_for_collaboration.jpg"
+                alt="">
+        </div>
+        <div fxLayout="column" class="w-100">
+            <mat-divider></mat-divider>
+            <div class="mr-auto">
+                <h3>Step 6</h3>
+            </div>
+            <span>
+                The link should direct you to Github where you can either decline or accept the invitation, click
+                <i>Accept Invitation</i>.
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/accept_invitation_to_collaborate.jpg"
+                alt="">
+        </div>
+        <div fxLayout="column" class="w-100">
+            <mat-divider></mat-divider>
+            <div class="mr-auto">
+                <h3>Step 7</h3>
+            </div>
+            <span>
+                If you followed the steps correctly, a success message will appear and
+                you will now be able to view and collaborate with the private repository.
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/collaborate_private_success.jpg"
+                alt="">
+        </div>
+        <div fxLayout="column" class="w-100">
+            <mat-divider></mat-divider>
+            <div class="mr-auto">
+                <h3>*Special Note:</h3>
+            </div>
+            <span>
+                As the repository owner, you can revoke the collaborator's access to the repository if he/she is no
+                longer a collaborator. Head over to the
+                Manage Access Settings (as in Step 1), click on the <strong>Trash</strong> icon to remove the
+                collaborator from the list.
+            </span>
+            <img src="https://raw.githubusercontent.com/JakeSiewJK64/ImageWarehouse/main/Rhine%20Cafe%20Blog/github-blog/collaborator_list.jpg"
+                alt="">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="center center" class="w-100">
+            <mat-divider></mat-divider>
+            <div class="me-auto">
+                <h3>Conclusion</h3>
+            </div>
+            <span>
+                It is important to keep sensitive repositories private and only invite trusted collaborators to your
+                repositories especially if we are
+                dealing with API keys or to avoid plagiarism in general in a university/college project. But above all, 
+                never share any code unless intended and you are responsible for what is shown in your repository.
+            </span>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start start">
+            <mat-divider></mat-divider>
+            <h3>Other related blogs:</h3>
+            <ol>
+                <li *ngFor="let item of alterLinks">
+                    <span class="text-success cursor-pointer" (click)="navigatetToBlog(item)">{{ item.name }}</span>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
